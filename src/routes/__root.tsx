@@ -10,13 +10,18 @@ import { queryClient } from "@/lib/query-client";
 import "../styles.css";
 
 export const Route = createRootRoute({
+  head: () => ({
+    meta: [
+      { charSet: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { title: "Lunai Advocacia" },
+    ],
+    links: [{ rel: "icon", href: "/favicon.svg" }],
+  }),
   component: () => {
     return (
       <html lang="pt">
         <head>
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>Lunai Advocacia</title>
           <HeadContent />
         </head>
         <body>

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && node scripts/fix-vercel-client-entry.js",
+    "build": "vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
@@ -51,7 +51,6 @@
     "@tiptap/extension-table": "^3.23.6",
     "@tiptap/extension-text-align": "^3.23.6",
     "@tiptap/extension-text-style": "^3.23.6",
-    "@tiptap/extension-underline": "^3.23.6",
     "@tiptap/pm": "^3.23.6",
     "@tiptap/react": "^3.23.6",
     "@tiptap/starter-kit": "^3.23.6",

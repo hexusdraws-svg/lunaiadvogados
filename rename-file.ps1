@@ -1,0 +1,1 @@
+Get-ChildItem -LiteralPath "C:\Users\the exceed\Documents\lunaiadvocacia\src\routes" | Where-Object { $_.Name -match "^processos_\.\$id\.tsx$" } | ForEach-Object { Rename-Item -LiteralPath $_.FullName -NewName "processos.`$id.tsx" -Force; Write-Host "Renamed: $($_.Name)" }

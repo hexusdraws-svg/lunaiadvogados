@@ -1,0 +1,6 @@
+﻿C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:158: {t(`clients.status.${cliente.estado}`)}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:174: value={cliente.tipo_documento ? t(`clients.documentType.${cliente.tipo_documento}`) : null}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:281: {t(`clients.documentType.${dt}`)}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\executive-utils.tsx:140: const tx = (key: string) => t(`admin.executive.${key}`);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:164: name: t(`finance.expenseForm.category.${name}`) || name,
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:232: const rawType = c.tipo_documento ? t(`clients.documentType.${c.tipo_documento}`) : "";

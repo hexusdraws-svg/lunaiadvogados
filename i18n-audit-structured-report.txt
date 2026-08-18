@@ -1,0 +1,1129 @@
+﻿==================== I18N AUDIT REPORT ====================
+Generated: 2026-08-09 17:00:21
+Project: Lunai Advocacia
+
+SUMMARY
+=======
+Total raw t() calls: 1098
+Files with t() calls: 65
+Total unique translation keys used: 649
+
+Key types:
+  Simple t('key'): matches in i18n-audit-double-quotes.txt
+  t('key', {opts}): matches in i18n-audit-with-options.txt
+  t(\key\): matches in i18n-audit-template-literals.txt
+
+Note: The t() function in use-i18n.tsx splits keys by '.' and navigates the
+translations object. Keys not found return defaultValue or the raw key string.
+
+==================== GROUPED BY FILE (UNIQUE KEYS) ====================
+
+FILE: components\app-sidebar.tsx
+  Unique keys: 25
+    - companySelect
+    - logout
+    - logoutBye
+    - logoutCancel
+    - logoutConfirmDesc
+    - logoutConfirmTitle
+    - logoutLoading
+    - nav.agenda
+    - nav.audiencias
+    - nav.clients.title
+    - nav.configuracoes
+    - nav.contratos
+    - nav.dashboard
+    - nav.despesas
+    - nav.executivePanel
+    - nav.finances
+    - nav.operations
+    - nav.processesContracts
+    - nav.processos
+    - nav.profissionais
+    - nav.recebimentos
+    - nav.sistema
+    - nav.tarefas
+    - profile.user
+    - systemName
+
+FILE: components\cliente-detail-dialog.tsx
+  Unique keys: 28
+    - clients.columns.dataCadastro
+    - clients.columns.nome
+    - clients.detail.associatedContracts
+    - clients.detail.associatedHearings
+    - clients.detail.associatedProcesses
+    - clients.detail.contact
+    - clients.detail.fullData
+    - clients.detail.history
+    - clients.detail.noClientFound
+    - clients.detail.noContracts
+    - clients.detail.noHearings
+    - clients.detail.noHistory
+    - clients.detail.noProcesses
+    - clients.detail.observations
+    - clients.detail.responsibleLawyer
+    - clients.documentType.${cliente.tipo_documento}
+    - clients.form.address
+    - clients.form.city
+    - clients.form.country
+    - clients.form.documentNumber
+    - clients.form.documentType
+    - clients.form.email
+    - clients.form.expiryDate
+    - clients.form.issueDate
+    - clients.form.issuePlace
+    - clients.form.nationality
+    - clients.form.naturality
+    - clients.status.${cliente.estado}
+
+FILE: components\cliente-form-dialog.tsx
+  Unique keys: 33
+    - cancel
+    - clients.documentType.${dt}
+    - clients.editClient
+    - clients.form.address
+    - clients.form.birthDate
+    - clients.form.city
+    - clients.form.country
+    - clients.form.documentNumber
+    - clients.form.documentType
+    - clients.form.email
+    - clients.form.expiryDate
+    - clients.form.fullName
+    - clients.form.issueDate
+    - clients.form.issuePlace
+    - clients.form.maritalStatus
+    - clients.form.nationality
+    - clients.form.naturality
+    - clients.form.observations
+    - clients.form.phone
+    - clients.form.profession
+    - clients.sections.additional
+    - clients.sections.address
+    - clients.sections.basicInfo
+    - clients.sections.document
+    - clients.subtitle
+    - clients.toasts.created
+    - clients.toasts.updated
+    - clients.validation.documentRequired
+    - clients.validation.invalidEmail
+    - clients.validation.nameRequired
+    - clients.validation.phoneRequired
+    - error
+    - loading
+
+FILE: components\contract-editor-panel.tsx
+  Unique keys: 1
+    - none
+
+FILE: components\contract-variables-sidebar.tsx
+  Unique keys: 1
+    - none
+
+FILE: components\despesas-expenses-table.tsx
+  Unique keys: 29
+    - actions
+    - cancel
+    - delete
+    - finance.expenses.associated
+    - finance.expenses.attachment
+    - finance.expenses.confirmDelete
+    - finance.expenses.confirmDeleteDescription
+    - finance.expenses.empty
+    - finance.expenses.loading
+    - finance.expenses.next
+    - finance.expenses.pdfGeneratedAt
+    - finance.expenses.pdfPage
+    - finance.expenses.pdfPeriod
+    - finance.expenses.pdfTitle
+    - finance.expenses.pdfTotal
+    - finance.expenses.previous
+    - finance.expenses.records
+    - finance.expenses.searchPlaceholder
+    - finance.expenses.statusOpen
+    - finance.expenses.statusOverdue
+    - finance.expenses.statusPaid
+    - finance.expenses.statusReceived
+    - finance.expenses.tableAmount
+    - finance.expenses.tableCategory
+    - finance.expenses.tableDate
+    - finance.expenses.tableDescription
+    - finance.expenses.tableProcess
+    - finance.expenses.tableResponsible
+    - finance.expenses.tableStatus
+
+FILE: components\document-editor-panel.tsx
+  Unique keys: 3
+    - cancel
+    - close
+    - save
+
+FILE: components\executive\executive-audiencias-tab.tsx
+  Unique keys: 1
+    - nav.audiencias
+
+FILE: components\executive\executive-dashboard-tab.tsx
+  Unique keys: 1
+    - finance.dashboardSection.title
+
+FILE: components\executive\executive-financeiro-tab.tsx
+  Unique keys: 5
+    - finance.budgets.title
+    - finance.invoices.title
+    - finance.receipts.title
+    - finance.receivablesTitle
+    - finance.title
+
+FILE: components\executive\executive-panel.tsx
+  Unique keys: 6
+    - finance.title
+    - nav.audiencias
+    - nav.dashboard
+    - nav.processos
+    - nav.profissionais
+    - refresh
+
+FILE: components\executive\executive-processos-tab.tsx
+  Unique keys: 6
+    - nav.processos
+    - status
+    - table.client
+    - table.processNumber
+    - table.responsibleLawyer
+    - table.type
+
+FILE: components\executive\executive-utils.tsx
+  Unique keys: 1
+    - admin.executive.${key}
+
+FILE: components\executive\finance-dashboard-section.tsx
+  Unique keys: 19
+    - finance.dashboardSection.charts.expensesByCategory
+    - finance.dashboardSection.charts.monthlyFlow
+    - finance.dashboardSection.charts.noData
+    - finance.dashboardSection.charts.profitByProcess
+    - finance.dashboardSection.charts.revenueByProfessional
+    - finance.dashboardSection.charts.revenueVsExpenses
+    - finance.dashboardSection.kpi.balance
+    - finance.dashboardSection.kpi.monthlyExpenses
+    - finance.dashboardSection.kpi.monthlyRevenue
+    - finance.dashboardSection.kpi.netProfit
+    - finance.dashboardSection.kpi.periodProfit
+    - finance.dashboardSection.kpi.totalExpenses
+    - finance.dashboardSection.kpi.totalRevenue
+    - finance.dashboardSection.subTabCashFlow
+    - finance.dashboardSection.subTabGeneral
+    - finance.dashboardSection.subtitle
+    - finance.dashboardSection.title
+    - finance.expenseForm.category.${name}
+    - noData
+
+FILE: components\expense-form-dialog.tsx
+  Unique keys: 45
+    - cancel
+    - finance.expenses.addCustomCategory
+    - finance.expenses.amount
+    - finance.expenses.attachments
+    - finance.expenses.backToStandard
+    - finance.expenses.category
+    - finance.expenses.client
+    - finance.expenses.clientPlaceholder
+    - finance.expenses.customCategoryPlaceholder
+    - finance.expenses.date
+    - finance.expenses.description
+    - finance.expenses.descriptionPlaceholder
+    - finance.expenses.descriptionShortPlaceholder
+    - finance.expenses.dueDate
+    - finance.expenses.fillAmount
+    - finance.expenses.fillDate
+    - finance.expenses.fillDescription
+    - finance.expenses.fillDueDate
+    - finance.expenses.invalidFileType
+    - finance.expenses.linkProcess
+    - finance.expenses.name
+    - finance.expenses.namePlaceholder
+    - finance.expenses.newExpense
+    - finance.expenses.observations
+    - finance.expenses.observationsPlaceholder
+    - finance.expenses.paymentMethod
+    - finance.expenses.processSearchPlaceholder
+    - finance.expenses.professional
+    - finance.expenses.role
+    - finance.expenses.rolePlaceholder
+    - finance.expenses.select
+    - finance.expenses.selectCategory
+    - finance.expenses.selectPaymentMethod
+    - finance.expenses.selectProfessional
+    - finance.expenses.unregisteredProfessional
+    - finance.expenses.uploadError
+    - finance.expenses.uploadHint
+    - finance.paymentMethods.card
+    - finance.paymentMethods.cash
+    - finance.paymentMethods.check
+    - finance.paymentMethods.emola
+    - finance.paymentMethods.mpesa
+    - finance.paymentMethods.other
+    - finance.paymentMethods.transfer
+    - save
+
+FILE: components\financas\add-transaction-modal.tsx
+  Unique keys: 1
+    - cancel
+
+FILE: components\finance\budget-list.tsx
+  Unique keys: 72
+    - actions
+    - amount
+    - cancel
+    - delete
+    - duplicate
+    - edit
+    - finance.budgets.addAtLeastOneItem
+    - finance.budgets.addItem
+    - finance.budgets.balance
+    - finance.budgets.client
+    - finance.budgets.clientProcess
+    - finance.budgets.companyDefault
+    - finance.budgets.confirmDelete
+    - finance.budgets.confirmDeleteDescription
+    - finance.budgets.convert
+    - finance.budgets.create
+    - finance.budgets.created
+    - finance.budgets.deleted
+    - finance.budgets.descriptionPlaceholder
+    - finance.budgets.downloadPdf
+    - finance.budgets.duplicated
+    - finance.budgets.empty.title
+    - finance.budgets.error
+    - finance.budgets.errorGeneratingNumber
+    - finance.budgets.issueDate
+    - finance.budgets.loading
+    - finance.budgets.migrationRequired
+    - finance.budgets.observations
+    - finance.budgets.observationsPlaceholder
+    - finance.budgets.pdfAddress
+    - finance.budgets.pdfClient
+    - finance.budgets.pdfEmail
+    - finance.budgets.pdfError
+    - finance.budgets.pdfGenerated
+    - finance.budgets.pdfIssueDate
+    - finance.budgets.pdfNuit
+    - finance.budgets.pdfNumber
+    - finance.budgets.pdfObservations
+    - finance.budgets.pdfPhone
+    - finance.budgets.pdfProcess
+    - finance.budgets.pdfStatus
+    - finance.budgets.pdfSubtotal
+    - finance.budgets.pdfTax
+    - finance.budgets.pdfTitle
+    - finance.budgets.pdfTotal
+    - finance.budgets.pdfValidUntil
+    - finance.budgets.responsible
+    - finance.budgets.saveError
+    - finance.budgets.searchPlaceholder
+    - finance.budgets.selectClient
+    - finance.budgets.selectProcess
+    - finance.budgets.selectStatus
+    - finance.budgets.services
+    - finance.budgets.status
+    - finance.budgets.statusUpdated
+    - finance.budgets.statusUpdateError
+    - finance.budgets.subtitle
+    - finance.budgets.tableDate
+    - finance.budgets.tableDescription
+    - finance.budgets.tableNumber
+    - finance.budgets.tableProcess
+    - finance.budgets.tableQty
+    - finance.budgets.tableTotal
+    - finance.budgets.tableUnitValue
+    - finance.budgets.tableValidUntil
+    - finance.budgets.title
+    - finance.budgets.updated
+    - finance.budgets.validUntil
+    - finance.filters.all
+    - finance.responsible
+    - save
+    - view
+
+FILE: components\finance\client-financial-summary.tsx
+  Unique keys: 5
+    - balance
+    - finance.feeNotes.title
+    - finance.invoices.title
+    - finance.receipts.title
+    - finance.summary
+
+FILE: components\finance\convert-budget-modal.tsx
+  Unique keys: 16
+    - amount
+    - cancel
+    - date
+    - description
+    - errors.unexpectedError
+    - finance.convert.confirm
+    - finance.convert.success
+    - finance.convert.title
+    - finance.feeNotes.services
+    - finance.invoices.convert
+    - notes
+    - number
+    - quantity
+    - status
+    - total
+    - unitValue
+
+FILE: components\finance\fee-notes-table.tsx
+  Unique keys: 37
+    - actions
+    - add
+    - amount
+    - cancel
+    - client
+    - date
+    - delete
+    - description
+    - duplicate
+    - edit
+    - finance.feeNotes.create
+    - finance.feeNotes.empty.description
+    - finance.feeNotes.empty.title
+    - finance.feeNotes.services
+    - finance.feeNotes.subtitle
+    - finance.feeNotes.title
+    - finance.invoices.convert
+    - finance.number
+    - observations
+    - observationsPlaceholder
+    - process
+    - process.confirmDelete
+    - quantity
+    - save
+    - selectClient
+    - selectProcess
+    - status
+    - status.accepted
+    - status.draft
+    - status.expired
+    - status.rejected
+    - status.sent
+    - subtotal
+    - total
+    - unitValue
+    - validUntil
+    - view
+
+FILE: components\finance\financial-dashboard.tsx
+  Unique keys: 14
+    - finance.dashboard.balanceToReceive
+    - finance.dashboard.expense
+    - finance.dashboard.expensesByCategory
+    - finance.dashboard.monthlyFlow
+    - finance.dashboard.monthlyReceipts
+    - finance.dashboard.noData
+    - finance.dashboard.noProcessData
+    - finance.dashboard.profit
+    - finance.dashboard.profitByProcess
+    - finance.dashboard.revenue
+    - finance.dashboard.revenueByProfessional
+    - finance.dashboard.totalExpenses
+    - finance.dashboard.totalInvoiced
+    - finance.dashboard.totalReceived
+
+FILE: components\finance\income-history.tsx
+  Unique keys: 6
+    - amount
+    - date
+    - finance.incomeHistory.empty
+    - finance.incomeHistory.totalReceived
+    - finance.paymentMethods.method
+    - reference
+
+FILE: components\finance\invoice-details.tsx
+  Unique keys: 32
+    - amount
+    - balance
+    - client
+    - date
+    - description
+    - dueDate
+    - edit
+    - finance.budgets.empty.title
+    - finance.downloadPDF
+    - finance.feeNotes.services
+    - finance.incomeHistory.title
+    - finance.invoiceDetails.markAsPaid
+    - finance.invoiceDetails.print
+    - finance.invoiceDetails.title
+    - finance.number
+    - finance.paymentMethods.method
+    - finance.receipts.title
+    - notes
+    - number
+    - quantity
+    - status.accepted
+    - status.cancelled
+    - status.draft
+    - status.expired
+    - status.paid
+    - status.partiallyPaid
+    - status.pending
+    - status.rejected
+    - status.sent
+    - subtotal
+    - total
+    - unitValue
+
+FILE: components\finance\invoice-list.tsx
+  Unique keys: 71
+    - actions
+    - amount
+    - cancel
+    - delete
+    - edit
+    - finance.filters.all
+    - finance.invoices.addAtLeastOneItem
+    - finance.invoices.addItem
+    - finance.invoices.available
+    - finance.invoices.balance
+    - finance.invoices.client
+    - finance.invoices.clientProcess
+    - finance.invoices.confirmDelete
+    - finance.invoices.confirmDeleteDescription
+    - finance.invoices.create
+    - finance.invoices.created
+    - finance.invoices.deleted
+    - finance.invoices.descriptionPlaceholder
+    - finance.invoices.dueDate
+    - finance.invoices.empty
+    - finance.invoices.error
+    - finance.invoices.feeNote
+    - finance.invoices.invalidCalculatedAmount
+    - finance.invoices.items
+    - finance.invoices.loading
+    - finance.invoices.migrationRequired
+    - finance.invoices.notes
+    - finance.invoices.notesPlaceholder
+    - finance.invoices.observations
+    - finance.invoices.observationsPlaceholder
+    - finance.invoices.paymentAmount
+    - finance.invoices.paymentDate
+    - finance.invoices.paymentFor
+    - finance.invoices.paymentMethod
+    - finance.invoices.paymentValue
+    - finance.invoices.receivedAmount
+    - finance.invoices.registerPayment
+    - finance.invoices.responsible
+    - finance.invoices.saveError
+    - finance.invoices.selectClient
+    - finance.invoices.selectFeeNote
+    - finance.invoices.selectProcess
+    - finance.invoices.selectStatus
+    - finance.invoices.status
+    - finance.invoices.subtitle
+    - finance.invoices.subtotal
+    - finance.invoices.tableBalanceDue
+    - finance.invoices.tableDate
+    - finance.invoices.tableDescription
+    - finance.invoices.tableNumber
+    - finance.invoices.tablePaidAmount
+    - finance.invoices.tableQty
+    - finance.invoices.tableTotal
+    - finance.invoices.tableUnitValue
+    - finance.invoices.title
+    - finance.invoices.updated
+    - finance.invoices.usePercent
+    - finance.invoices.validAmount
+    - finance.invoices.validPercentage
+    - finance.invoices.viewReceipts
+    - finance.paymentMethods.bank
+    - finance.paymentMethods.card
+    - finance.paymentMethods.cash
+    - finance.paymentMethods.check
+    - finance.paymentMethods.emola
+    - finance.paymentMethods.mpesa
+    - finance.paymentMethods.other
+    - finance.paymentMethods.transfer
+    - finance.responsible
+    - save
+    - view
+
+FILE: components\finance\invoices-table.tsx
+  Unique keys: 36
+    - actions
+    - add
+    - amount
+    - balance
+    - cancel
+    - client
+    - date
+    - delete
+    - description
+    - dueDate
+    - edit
+    - finance.feeNotes.title
+    - finance.income.register
+    - finance.invoices.create
+    - finance.invoices.empty
+    - finance.invoices.items
+    - finance.invoices.subtitle
+    - finance.invoices.title
+    - finance.number
+    - finance.receipts.title
+    - observations
+    - process
+    - quantity
+    - save
+    - selectClient
+    - selectFeeNote
+    - selectProcess
+    - status
+    - status.cancelled
+    - status.paid
+    - status.partiallyPaid
+    - status.pending
+    - subtotal
+    - total
+    - unitValue
+    - view
+
+FILE: components\finance\process-financial-summary.tsx
+  Unique keys: 5
+    - balance
+    - finance.feeNotes.title
+    - finance.invoices.title
+    - finance.receipts.title
+    - finance.summary
+
+FILE: components\finance\receipts-table.tsx
+  Unique keys: 32
+    - actions
+    - amount
+    - client
+    - close
+    - date
+    - description
+    - download
+    - downloadPDF
+    - finance.filters.all
+    - finance.paymentMethods.method
+    - finance.paymentMethods.title
+    - finance.receipts.company
+    - finance.receipts.empty
+    - finance.receipts.generatedAt
+    - finance.receipts.reference
+    - finance.receipts.searchPlaceholder
+    - finance.receipts.subtitle
+    - finance.receipts.tableNumber
+    - finance.receipts.title
+    - finance.responsible
+    - print
+    - receipts.client
+    - receipts.description
+    - receipts.field
+    - receipts.generatedAt
+    - receipts.number
+    - receipts.paymentDate
+    - receipts.paymentMethod
+    - receipts.receiptNumber
+    - receipts.reference
+    - receipts.value
+    - view
+
+FILE: components\financial-transactions-table.tsx
+  Unique keys: 13
+    - actions
+    - add
+    - amount
+    - cancel
+    - client
+    - delete
+    - description
+    - finance.confirmDelete
+    - overdue
+    - process
+    - save
+    - status
+    - yes
+
+FILE: components\leads-table.tsx
+  Unique keys: 2
+    - client
+    - none
+
+FILE: components\legal-guidance-dialog.tsx
+  Unique keys: 1
+    - none
+
+FILE: components\license-alert-banner.tsx
+  Unique keys: 3
+    - closeAlert
+    - licenseAlert.expiresToday
+    - licenseAlert.renewToAvoidInterruption
+
+FILE: components\notifications-bell.tsx
+  Unique keys: 9
+    - notifications.accept
+    - notifications.collaborationInvite
+    - notifications.empty
+    - notifications.markAsRead
+    - notifications.pending
+    - notifications.processLabel
+    - notifications.reject
+    - notifications.reminderPending
+    - notifications.title
+
+FILE: components\page-header.tsx
+  Unique keys: 2
+    - languages.en
+    - languages.pt
+
+FILE: components\processo-form-dialog.tsx
+  Unique keys: 7
+    - cancel
+    - description
+    - optional
+    - priority
+    - responsibleLawyer
+    - save
+    - status
+
+FILE: components\property-card.tsx
+  Unique keys: 3
+    - active
+    - amount
+    - inactive
+
+FILE: components\protected-route.tsx
+  Unique keys: 2
+    - errors.companyNotConfigured
+    - errors.noPermission
+
+FILE: components\super-admin-sidebar.tsx
+  Unique keys: 12
+    - alerts
+    - cancel
+    - company
+    - configuracoes
+    - dashboardTitle
+    - finances
+    - license
+    - loading
+    - logoutConfirmDesc
+    - signOut
+    - superAdmin.label
+    - superAdmin.platform
+
+FILE: components\tiptap-editor.tsx
+  Unique keys: 2
+    - client
+    - process
+
+FILE: lib\supabase-error-handler.tsx
+  Unique keys: 1
+    - errors.hideDetails
+
+FILE: routes\admin.empresas.$companyId.tsx
+  Unique keys: 1
+    - admin.companyDetails
+
+FILE: routes\admin.empresas.tsx
+  Unique keys: 4
+    - admin.activeCompanies
+    - admin.companies
+    - admin.totalCompanies
+    - search
+
+FILE: routes\admin.painel-executivo.tsx
+  Unique keys: 2
+    - adminDashboard
+    - adminDashboardSubtitle
+
+FILE: routes\agenda.tsx
+  Unique keys: 1
+    - agenda
+
+FILE: routes\audiencias.tsx
+  Unique keys: 16
+    - audiencias
+    - city
+    - court
+    - delete
+    - edit
+    - judge
+    - legalGuidancePeople
+    - legalGuidancePlaceholder
+    - nav.audienciasActions.edit
+    - nav.audienciasActions.legalGuidance
+    - nav.audienciasActions.markCancelled
+    - nav.audienciasActions.markCompleted
+    - notes
+    - search
+    - selectCaseType
+    - selectProcess
+
+FILE: routes\automacao.tsx
+  Unique keys: 1
+    - automacao
+
+FILE: routes\cadastros.clientes.tsx
+  Unique keys: 31
+    - cancel
+    - clients.addClient
+    - clients.allClients
+    - clients.columns.acoes
+    - clients.columns.advogado
+    - clients.columns.cidade
+    - clients.columns.dataCadastro
+    - clients.columns.documento
+    - clients.columns.email
+    - clients.columns.estado
+    - clients.columns.nome
+    - clients.columns.telefone
+    - clients.confirmDelete
+    - clients.confirmDeleteTitle
+    - clients.deleteClient
+    - clients.detail.associatedProcesses
+    - clients.detail.noProcesses
+    - clients.documentType.${c.tipo_documento}
+    - clients.editClient
+    - clients.emptyHint
+    - clients.emptyTitle
+    - clients.myClients
+    - clients.searchPlaceholder
+    - clients.showProcesses
+    - clients.stats.active
+    - clients.stats.archived
+    - clients.stats.total
+    - clients.title
+    - clients.toasts.deleted
+    - delete
+    - loading
+
+FILE: routes\cadastros.profissionais.tsx
+  Unique keys: 34
+    - cancel
+    - cancelInvite
+    - email
+    - fullName
+    - nav.profissionais
+    - phone
+    - professional
+    - profile.roles.admin
+    - resendInvite
+    - search
+    - team.addProfessional
+    - team.companyNotFound
+    - team.confirmCancelInvite
+    - team.confirmRemove
+    - team.editMember
+    - team.emailRequired
+    - team.emailRequiredToast
+    - team.inviteCancelled
+    - team.inviteResent
+    - team.inviteSent
+    - team.member
+    - team.noPermissionAddMembers
+    - team.noProfessionalsYet
+    - team.position
+    - team.professionalUpdated
+    - team.saveChanges
+    - team.table.contact
+    - team.table.email
+    - team.table.name
+    - team.table.photo
+    - team.table.position
+    - team.title
+    - team.userRemoved
+    - team.userType
+
+FILE: routes\configuracoes.tsx
+  Unique keys: 30
+    - cancel
+    - close
+    - email
+    - fullName
+    - profile.phonePlaceholder
+    - profile.role
+    - profile.roles.admin
+    - profile.roles.professional
+    - profile.roles.superAdmin
+    - profile.status
+    - profile.user
+    - profile.whatsappContact
+    - profile.yourName
+    - saveChanges
+    - settings.about
+    - settings.aboutDesc
+    - settings.comingSoon
+    - settings.company
+    - settings.companyDesc
+    - settings.language
+    - settings.languageDesc
+    - settings.notifications
+    - settings.notificationsDesc
+    - settings.profile
+    - settings.profileDesc
+    - settings.security
+    - settings.securityDesc
+    - settings.suggestions
+    - settings.suggestionsDesc
+    - settings.title
+
+FILE: routes\contratos.tsx
+  Unique keys: 44
+    - cancel
+    - clients.searchPlaceholder
+    - contracts.confirmDelete
+    - contracts.confirmDeleteTitle
+    - contracts.emptyHint
+    - contracts.emptyTitle
+    - contracts.issued
+    - contracts.newContract
+    - contracts.previewClientLabel
+    - contracts.previewTitle
+    - contracts.statusFilter.all
+    - contracts.statusFilter.cancelled
+    - contracts.statusFilter.draft
+    - contracts.statusFilter.sent
+    - contracts.statusFilter.signed
+    - contracts.table.actions
+    - contracts.table.client
+    - contracts.table.date
+    - contracts.table.name
+    - contracts.table.status
+    - contracts.wizard.associateProcessHint
+    - contracts.wizard.baseTemplate
+    - contracts.wizard.blankContract
+    - contracts.wizard.continue
+    - contracts.wizard.noActiveTemplates
+    - contracts.wizard.noClientMatches
+    - contracts.wizard.noClientsRegistered
+    - contracts.wizard.noProcess
+    - contracts.wizard.noProcessForClient
+    - contracts.wizard.openEditor
+    - contracts.wizard.processLabel
+    - contracts.wizard.processOptional
+    - contracts.wizard.responsibleLabel
+    - contracts.wizard.startFromZero
+    - contracts.wizard.step1
+    - contracts.wizardStep
+    - contracts.wizardTitle
+    - delete
+    - downloadPDF
+    - edit
+    - nav.contratos
+    - nav.modelosContrato
+    - selectProcess
+    - view
+
+FILE: routes\empresa.tsx
+  Unique keys: 17
+    - address
+    - cancel
+    - city
+    - companyName
+    - companySettings
+    - country
+    - email
+    - nuit
+    - phone
+    - save
+    - selectCurrency
+    - selectDateFormat
+    - selectLanguage
+    - selectTimezone
+    - success
+    - uploadLogo
+    - website
+
+FILE: routes\financas.despesas.tsx
+  Unique keys: 2
+    - finance.expenses.exportReport
+    - finance.expenses.newExpense
+
+FILE: routes\financas.recebimentos.tsx
+  Unique keys: 11
+    - finance.budgets.searchPlaceholder
+    - finance.budgets.status
+    - finance.budgets.title
+    - finance.filters.all
+    - finance.invoices.client
+    - finance.invoices.searchPlaceholder
+    - finance.invoices.status
+    - finance.invoices.title
+    - finance.paymentMethods.title
+    - finance.receipts.searchPlaceholder
+    - finance.receipts.title
+
+FILE: routes\imoveis.tsx
+  Unique keys: 1
+    - imoveis
+
+FILE: routes\index.tsx
+  Unique keys: 8
+    - attention
+    - dashboard.activeCases
+    - dashboard.hearingsToday
+    - dashboard.hearingsWeek
+    - dashboard.totalClients
+    - dashboardTitle
+    - noAttentionItems
+    - noAttentionItemsSubtitle
+
+FILE: routes\leads.tsx
+  Unique keys: 1
+    - leads
+
+FILE: routes\login.tsx
+  Unique keys: 10
+    - email
+    - invalidCredentials
+    - languages.en
+    - languages.pt
+    - loginSubtitle
+    - loginTitle
+    - noAccount
+    - password
+    - register
+    - signIn
+
+FILE: routes\modelos.$id.tsx
+  Unique keys: 5
+    - cancel
+    - editModel
+    - modelStatusActive
+    - modelStatusArchived
+    - save
+
+FILE: routes\modelos.tsx
+  Unique keys: 16
+    - archive
+    - author
+    - cancel
+    - confirmDelete
+    - delete
+    - duplicate
+    - edit
+    - filterByCategory
+    - modelosContrato
+    - modelStatus
+    - modelStatusActive
+    - newModel
+    - noModels
+    - noModelsDesc
+    - searchPlaceholder
+    - updatedAt
+
+FILE: routes\processos.$id.tsx
+  Unique keys: 5
+    - cancel
+    - delete
+    - process.confirmDelete
+    - process.detail.actions.conclude
+    - process.detail.conclude.confirm
+
+FILE: routes\processos.tsx
+  Unique keys: 5
+    - archive
+    - cancel
+    - delete
+    - process.confirmArchive
+    - process.confirmDelete
+
+FILE: routes\signup.tsx
+  Unique keys: 13
+    - confirmPassword
+    - email
+    - fullName
+    - haveAccount
+    - languages.en
+    - languages.pt
+    - password
+    - register
+    - registerError
+    - registerRedirect
+    - registerSuccess
+    - signIn
+    - signupSubtitle
+
+FILE: routes\sobre.tsx
+  Unique keys: 5
+    - about.beta
+    - about.description
+    - about.developer
+    - about.tech
+    - settings.about
+
+FILE: routes\sugestoes.tsx
+  Unique keys: 8
+    - settings.suggestions
+    - suggestions.error
+    - suggestions.futureNote
+    - suggestions.label
+    - suggestions.placeholder
+    - suggestions.send
+    - suggestions.sent
+    - suggestions.subtitle
+
+FILE: routes\super-admin.index.tsx
+  Unique keys: 10
+    - superAdmin.dashboard
+    - superAdmin.dashboardStats.activeCompanies
+    - superAdmin.dashboardStats.createdThisMonth
+    - superAdmin.dashboardStats.createdThisWeek
+    - superAdmin.dashboardStats.createdToday
+    - superAdmin.dashboardStats.freelancers
+    - superAdmin.dashboardStats.offices
+    - superAdmin.dashboardStats.suspendedCompanies
+    - superAdmin.dashboardStats.totalCompanies
+    - superAdmin.loadError
+
+FILE: routes\tarefas.tsx
+  Unique keys: 19
+    - tarefas
+    - tarefas.addTask
+    - tarefas.empty.subtitle
+    - tarefas.empty.title
+    - tarefas.processLabel
+    - tarefas.status.cancelled
+    - tarefas.status.completed
+    - tarefas.status.inProgress
+    - tarefas.status.pending
+    - tarefas.taskForm.cancel
+    - tarefas.taskForm.create
+    - tarefas.taskForm.description
+    - tarefas.taskForm.descriptionPlaceholder
+    - tarefas.taskForm.reminderDate
+    - tarefas.taskForm.reminderTime
+    - tarefas.taskForm.taskDate
+    - tarefas.taskForm.title
+    - tarefas.taskForm.titlePlaceholder
+    - tarefasSubtitle
+
+==================== ALL UNIQUE KEYS (MASTER LIST) ====================
+
+Total: 649 unique keys
+
+All keys defined in src/lib/i18n.ts:
+  save, cancel, edit, add, search, actions, status, date, description, amount,
+  client, professional, company, archive, resendInvite, cancelInvite, delete,
+  confirm, view, duplicate, close, yes, no, loading, error, success, warning,
+  info, name, email, phone, address, city, country, document, documentType,
+  documentNumber, issueDate, expiryDate, issuePlace, nationality, naturality,
+  maritalStatus, birthDate, profession, observations, fullName, role, active,
+  inactive, suspended, pending, cancelled, completed, select, all, none,
+  required, optional, today, yesterday, thisWeek, thisMonth, thisYear, filter,
+  clear, export, import, print, download, upload, saveChanges, back, next,
+  previous, submit, reset, confirmDelete, confirmDeleteDescription, noData,
+  noRecords, page, of, records, searchPlaceholder, filterBy, sortBy,
+  ascending, descending, createdAt, updatedAt, createdBy, responsible,
+  responsibleLawyer, creator, process, case, type, priority, high, medium,
+  low, draft, sent, accepted, rejected, expired, paid, received, open,
+  overdue, inProgress, concluded, hidden, public, private, internal
+
+(Note: i18n.ts also has duplicate keys - accepted, active, archived, cancelled,
+ completed, expired, draft, inProgress, paid, pending, received, etc. appear
+ twice in the definitions - 71 unused defined keys identified)
+
+==================== END OF REPORT ====================

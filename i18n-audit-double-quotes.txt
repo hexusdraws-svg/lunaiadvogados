@@ -1,0 +1,730 @@
+﻿C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:107: label: t("nav.finances"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:112: title: t("nav.recebimentos"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:119: title: t("nav.despesas"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:128: label: t("nav.sistema"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:130: { tKey: "nav.configuracoes", title: t("nav.configuracoes"), url: "/configuracoes", icon: Settings },
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:140: label: t("nav.executivePanel"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:145: title: t("nav.executivePanel"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:203: <p className="text-sm font-semibold tracking-tight text-foreground">{t("systemName")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:219: {company?.nome ?? t("companySelect")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:334: <span>{t("logout")}</span>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:339: <AlertDialogTitle>{t("logoutConfirmTitle")}</AlertDialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:340: <AlertDialogDescription>{t("logoutConfirmDesc")}</AlertDialogDescription>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:343: <AlertDialogCancel>{t("logoutCancel")}</AlertDialogCancel>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:345: {t("logout")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:71: label: t("nav.operations"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:75: title: t("nav.dashboard"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:79: { tKey: "nav.agenda", title: t("nav.agenda"), url: "/agenda", icon: CalendarDays },
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:80: { tKey: "nav.audiencias", title: t("nav.audiencias"), url: "/audiencias", icon: Gavel },
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:81: { tKey: "nav.tarefas", title: t("nav.tarefas"), url: "/tarefas", icon: CheckSquare },
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:86: label: t("nav.processesContracts"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:91: title: t("nav.clients.title"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:95: { tKey: "nav.profissionais", title: t("nav.profissionais"), url: "/cadastros/profissionais", icon: Users, permission: "manage_team" },
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:96: { tKey: "nav.processos", title: t("nav.processos"), url: "/processos", icon: Briefcase },
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\app-sidebar.tsx:99: title: t("nav.contratos"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:155: {cliente?.nome ?? t("clients.detail.noClientFound")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:167: <h3 className="mb-3 text-base font-semibold">{t("clients.detail.fullData")}</h3>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:169: <Field label={t("clients.columns.nome")} value={cliente.nome} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:170: <Field label={t("clients.detail.contact")} value={cliente.contacto} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:171: <Field label={t("clients.form.email")} value={cliente.email} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:173: label={t("clients.form.documentType")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:176: <Field label={t("clients.form.documentNumber")} value={cliente.documento} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:177: <Field label={t("clients.form.issueDate")} value={formatDateForDisplay(cliente.data_emissao)} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:178: <Field label={t("clients.form.issuePlace")} value={cliente.local_emissao} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:179: <Field label={t("clients.form.expiryDate")} value={formatDateForDisplay(cliente.data_validade)} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:180: <Field label={t("clients.form.nationality")} value={cliente.nacionalidade} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:181: <Field label={t("clients.form.naturality")} value={cliente.naturalidade} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:182: <Field label={t("clients.form.address")} value={cliente.endereco} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:183: <Field label={t("clients.form.city")} value={cliente.cidade} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:184: <Field label={t("clients.form.country")} value={cliente.pais} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:185: <Field label={t("clients.detail.responsibleLawyer")} value={lawyerName(cliente.created_by)} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:186: <Field label={t("clients.columns.dataCadastro")} value={fmtDate(cliente.created_at)} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:191: {t("clients.detail.observations")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:200: {t("clients.detail.associatedProcesses")}{" "}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:206: <p className="text-sm text-muted-foreground">{t("clients.detail.noProcesses")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:224: {t("clients.detail.associatedHearings")}{" "}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:230: <p className="text-sm text-muted-foreground">{t("clients.detail.noHearings")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:251: {t("clients.detail.associatedContracts")}{" "}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:257: <p className="text-sm text-muted-foreground">{t("clients.detail.noContracts")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:274: <h3 className="mb-3 text-base font-semibold">{t("clients.detail.history")}</h3>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-detail-dialog.tsx:275: <p className="text-sm text-muted-foreground">{t("clients.detail.noHistory")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:144: toast.error(t("clients.validation.nameRequired"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:148: toast.error(t("clients.validation.phoneRequired"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:152: toast.error(t("clients.validation.documentRequired"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:156: toast.error(t("clients.validation.invalidEmail"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:165: toast.error(t("error"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:197: toast.success(t("clients.toasts.updated"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:204: toast.success(t("clients.toasts.created"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:222: <DialogTitle>{isEdit ? t("clients.editClient") : t("clients.addClient")}</DialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:223: <DialogDescription>{t("clients.subtitle")}</DialogDescription>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:234: <Label className="text-xs text-muted-foreground">{t("clients.form.fullName")} *</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:238: placeholder={t("clients.form.fullName")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:242: <Label className="text-xs text-muted-foreground">{t("clients.form.phone")} *</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:246: placeholder={t("clients.form.phone")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:250: <Label className="text-xs text-muted-foreground">{t("clients.form.email")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:255: placeholder={t("clients.form.email")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:269: {t("clients.form.documentType")} *
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:289: {t("clients.form.documentNumber")} *
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:294: placeholder={t("clients.form.documentNumber")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:298: <Label className="text-xs text-muted-foreground">{t("clients.form.issueDate")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:306: <Label className="text-xs text-muted-foreground">{t("clients.form.issuePlace")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:310: placeholder={t("clients.form.issuePlace")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:316: <Label className="text-xs text-muted-foreground">{t("clients.form.expiryDate")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:324: <Label className="text-xs text-muted-foreground">{t("clients.form.nationality")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:328: placeholder={t("clients.form.nationality")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:332: <Label className="text-xs text-muted-foreground">{t("clients.form.naturality")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:336: placeholder={t("clients.form.naturality")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:340: <Label className="text-xs text-muted-foreground">{t("clients.form.maritalStatus")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:344: placeholder={t("clients.form.maritalStatus")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:350: <Label className="text-xs text-muted-foreground">{t("clients.form.birthDate")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:366: <Label className="text-xs text-muted-foreground">{t("clients.form.address")} *</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:370: placeholder={t("clients.form.address")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:375: <Label className="text-xs text-muted-foreground">{t("clients.form.city")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:379: placeholder={t("clients.form.city")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:383: <Label className="text-xs text-muted-foreground">{t("clients.form.country")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:387: placeholder={t("clients.form.country")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:400: <Label className="text-xs text-muted-foreground">{t("clients.form.profession")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:404: placeholder={t("clients.form.profession")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:409: <Label className="text-xs text-muted-foreground">{t("clients.form.observations")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:414: placeholder={t("clients.form.observations")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:422: {t("cancel")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\cliente-form-dialog.tsx:425: {saving ? t("loading") : t("save")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\contract-editor-panel.tsx:104: <p className="font-semibold">{tipoDocumento || t("none")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\contract-editor-panel.tsx:110: <p className="font-semibold">{initial.processoNumero || t("none")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\contract-editor-panel.tsx:98: <p className="font-semibold">{initial.clienteNome || t("none")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\contract-variables-sidebar.tsx:117: {hasValue ? value : t("none")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:145: ? t("finance.expenses.statusReceived")
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:147: ? t("finance.expenses.statusPaid")
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:149: ? t("finance.expenses.statusOverdue")
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:150: : t("finance.expenses.statusOpen");
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:156: doc.text(t("finance.expenses.pdfTitle"), 14, 20);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:158: doc.text(`${t("finance.expenses.pdfPeriod")}: ${range.label}`, 14, 28);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:160: doc.text(`${t("finance.expenses.pdfGeneratedAt")}: ${format(new Date(), dateFormat, { locale })}`, 14, 34);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:171: head: [[t("finance.expenses.tableCategory"), t("finance.expenses.tableDescription"), t("finance.expenses.tableResponsible"), t("finance.expenses.tableProcess"), t("finance.expenses.tableDate"), t("finance.expenses.tableAmount"), t("finance.expenses.tableStatus")]],
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:176: d.process_id ? t("finance.expenses.associated") : "—",
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:191: `${t("finance.expenses.pdfTotal")}: ${formatCurrency(total, currency)}`,
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:196: `${t("finance.expenses.pdfPage")} ${data.pageNumber} ${t("finance.expenses.pdfOf")} ${pageNumber}`,
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:228: placeholder={t("finance.expenses.searchPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:239: {t("finance.expenses.loading")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:243: {t("finance.expenses.empty")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:250: <TableHead className="text-xs font-medium">{t("finance.expenses.tableCategory")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:251: <TableHead className="text-xs font-medium">{t("finance.expenses.tableDescription")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:252: <TableHead className="text-xs font-medium">{t("finance.expenses.tableResponsible")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:253: <TableHead className="text-xs font-medium">{t("finance.expenses.tableProcess")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:254: <TableHead className="text-xs font-medium">{t("finance.expenses.tableDate")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:255: <TableHead className="text-xs font-medium text-right">{t("finance.expenses.tableAmount")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:256: <TableHead className="text-xs font-medium">{t("finance.expenses.tableStatus")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:257: <TableHead className="text-xs font-medium text-center">{t("actions")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:274: {d.process_id ? t("finance.expenses.associated") : "—"}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:285: ? t("finance.expenses.statusOverdue")
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:286: : (d.status === "recebido" ? t("finance.expenses.statusReceived") : d.status === "pago" ? t("finance.expenses.statusPaid") : t("finance.expenses.statusOpen"))}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:338: {sorted.length} {t("finance.expenses.records")} · {t("finance.expenses.page")} {page} {t("finance.expenses.of")} {totalPages}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:348: {t("finance.expenses.previous")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:357: {t("finance.expenses.next")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:366: <DialogTitle>{t("finance.expenses.attachment")}</DialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:369: <iframe src={viewingAttachment.url} className="h-[70vh] w-full" title={t("finance.expenses.attachment")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:373: alt={t("finance.expenses.attachment")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:383: <DialogTitle>{t("finance.expenses.confirmDelete")}</DialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:385: {t("finance.expenses.confirmDeleteDescription")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:390: {t("cancel")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\despesas-expenses-table.tsx:393: {t("delete")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\document-editor-panel.tsx:117: {t("cancel")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\document-editor-panel.tsx:125: {t("save")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\document-editor-panel.tsx:131: title={t("close")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\executive-audiencias-tab.tsx:88: <Section       title={t("nav.audiencias")} icon={Gavel} accent="info">
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\executive-dashboard-tab.tsx:104: <Section title={t("finance.dashboardSection.title")} icon={Wallet} accent="success">
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\executive-dashboard-tab.tsx:97: {t("finance.dashboardSection.title")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\executive-panel.tsx:118: {t("refresh")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\executive-panel.tsx:44: {t("nav.dashboard")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\executive-panel.tsx:48: {t("nav.processos")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\executive-panel.tsx:52: {t("nav.audiencias")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\executive-panel.tsx:56: {t("nav.profissionais")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\executive-processos-tab.tsx:66: title={t("nav.processos")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\executive-processos-tab.tsx:93: <th className="px-3 py-2 font-medium">{t("table.processNumber")}</th>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\executive-processos-tab.tsx:94: <th className="px-3 py-2 font-medium">{t("table.client")}</th>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\executive-processos-tab.tsx:95: <th className="px-3 py-2 font-medium">{t("table.type")}</th>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\executive-processos-tab.tsx:96: <th className="px-3 py-2 font-medium">{t("status")}</th>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\executive-processos-tab.tsx:97: <th className="px-3 py-2 font-medium">{t("table.responsibleLawyer")}</th>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:220: label: t("finance.dashboardSection.kpi.totalRevenue"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:226: label: t("finance.dashboardSection.kpi.totalExpenses"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:232: label: t("finance.dashboardSection.kpi.netProfit"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:238: label: t("finance.dashboardSection.kpi.balance"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:244: label: t("finance.dashboardSection.kpi.monthlyRevenue"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:250: label: t("finance.dashboardSection.kpi.monthlyExpenses"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:256: label: t("finance.dashboardSection.kpi.periodProfit"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:270: {t("finance.dashboardSection.title")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:272: <p className="text-xs text-muted-foreground">{t("finance.dashboardSection.subtitle")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:288: {t("finance.dashboardSection.subTabGeneral")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:291: {t("finance.dashboardSection.subTabCashFlow")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:312: {t("finance.dashboardSection.charts.monthlyFlow")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:352: {t("finance.dashboardSection.charts.revenueVsExpenses")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:373: {t("finance.dashboardSection.charts.revenueByProfessional")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:389: {t("finance.dashboardSection.charts.noData")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:398: {t("finance.dashboardSection.charts.profitByProcess")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:416: {t("noData")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:426: {t("finance.dashboardSection.charts.expensesByCategory")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\executive\finance-dashboard-section.tsx:450: <p className="text-sm text-muted-foreground">{t("noData")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:155: toast.error(t("finance.expenses.invalidFileType"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:188: toast.error(t("finance.expenses.selectCategory"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:192: toast.error(t("finance.expenses.fillDescription"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:196: toast.error(t("finance.expenses.fillAmount"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:200: toast.error(t("finance.expenses.fillDate"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:204: toast.error(t("finance.expenses.fillDueDate"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:208: toast.error(t("finance.expenses.selectPaymentMethod"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:218: console.error(t("finance.expenses.uploadError"), e);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:219: toast.error(t("finance.expenses.uploadError"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:295: <DialogTitle>{t("finance.expenses.newExpense")}</DialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:301: <Label>{t("finance.expenses.category")} *</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:306: <SelectValue placeholder={t("finance.expenses.selectCategory")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:322: {t("finance.expenses.addCustomCategory")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:330: placeholder={t("finance.expenses.customCategoryPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:342: {t("finance.expenses.backToStandard")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:350: <Label>{t("finance.expenses.description")} *</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:354: placeholder={t("finance.expenses.descriptionPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:360: <Label>{t("finance.expenses.amount")} *</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:372: <Label>{t("finance.expenses.date")} *</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:382: <Label>{t("finance.expenses.dueDate")} *</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:392: <Label>{t("finance.expenses.paymentMethod")} *</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:398: <SelectValue placeholder={t("finance.expenses.select")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:401: <SelectItem value="dinheiro">{t("finance.paymentMethods.cash")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:402: <SelectItem value="transferencia">{t("finance.paymentMethods.transfer")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:403: <SelectItem value="mpesa">{t("finance.paymentMethods.mpesa")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:404: <SelectItem value="emola">{t("finance.paymentMethods.emola")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:405: <SelectItem value="cartao">{t("finance.paymentMethods.card")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:406: <SelectItem value="cheque">{t("finance.paymentMethods.check")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:407: <SelectItem value="outro">{t("finance.paymentMethods.other")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:416: <Label className="font-medium">{t("finance.expenses.professional")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:418: <Label className="text-sm">{t("finance.expenses.unregisteredProfessional")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:437: <SelectValue placeholder={t("finance.expenses.selectProfessional")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:456: <Label>{t("finance.expenses.name")} *</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:460: placeholder={t("finance.expenses.namePlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:464: <Label>{t("finance.expenses.role")} *</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:468: placeholder={t("finance.expenses.rolePlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:472: <Label>{t("finance.expenses.description")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:476: placeholder={t("finance.expenses.descriptionShortPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:486: <Label>{t("finance.expenses.linkProcess")} {t("optional")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:491: placeholder={t("finance.expenses.processSearchPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:539: <Label>{t("finance.expenses.client")} {t("optional")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:544: placeholder={t("finance.expenses.clientPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:584: <Label>{t("finance.expenses.observations")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:588: placeholder={t("finance.expenses.observationsPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:595: <Label>{t("finance.expenses.attachments")} {t("optional")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:629: <span>{t("finance.expenses.uploadHint")}</span>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:639: {t("cancel")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\expense-form-dialog.tsx:643: {t("save")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financas\add-transaction-modal.tsx:49: {t("cancel")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:150: toast.success(t("finance.budgets.statusUpdated"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:153: toast.error(e?.message || t("finance.budgets.statusUpdateError"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:205: toast.error(t("finance.budgets.addAtLeastOneItem"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:237: console.error(t("finance.budgets.errorGeneratingNumber"), e);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:238: toast.error(t("finance.budgets.errorGeneratingNumber"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:246: toast.success(t("finance.budgets.updated"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:249: toast.success(t("finance.budgets.created"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:256: toast.error(t("finance.budgets.migrationRequired"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:260: toast.error(t("finance.budgets.saveError"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:268: toast.success(t("finance.budgets.deleted"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:279: toast.success(t("finance.budgets.duplicated"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:301: doc.text(t("finance.budgets.pdfTitle"), 14, 20);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:305: doc.text(`${t("finance.budgets.pdfNumber")}: ${budget.numero || "—"}`, 14, 28);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:306: doc.text(`${t("finance.budgets.pdfIssueDate")}: ${budget.issue_date ? format(parseISO(budget.issue_date), "dd/MM/yyyy") : "—"}`, 14, 34);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:307: doc.text(`${t("finance.budgets.pdfValidUntil")}: ${budget.valid_until ? format(parseISO(budget.valid_until), "dd/MM/yyyy") : "—"}`, 14, 40);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:308: doc.text(`${t("finance.budgets.pdfStatus")}: ${budget.status || "—"}`, 14, 46);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:315: doc.text(company.data.nome || t("finance.budgets.companyDefault"), 14, companyY);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:319: if (company.data.endereco) { doc.text(`${t("finance.budgets.pdfAddress")}: ${company.data.endereco}`, 14, companyY); companyY += 5; }
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:320: if (company.data.telefone) { doc.text(`${t("finance.budgets.pdfPhone")}: ${company.data.telefone}`, 14, companyY); companyY += 5; }
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:321: if (company.data.email) { doc.text(`${t("finance.budgets.pdfEmail")}: ${company.data.email}`, 14, companyY); companyY += 5; }
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:322: if (company.data.nuit) { doc.text(`${t("finance.budgets.pdfNuit")}: ${company.data.nuit}`, 14, companyY); companyY += 5; }
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:330: doc.text(t("finance.budgets.pdfClient"), 14, clientY);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:343: doc.text(t("finance.budgets.pdfProcess"), 14, processY);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:361: head: [[t("finance.budgets.tableDescription"), t("finance.budgets.tableQty"), t("finance.budgets.tableUnitValue"), t("finance.budgets.tableTotal")]],
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:372: doc.text(`${t("finance.budgets.pdfSubtotal")}: ${new Intl.NumberFormat("pt-PT", { style: "currency", currency: "MZN" }).format(budget.subtotal || 0)}`, 14, finalY);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:373: doc.text(`${t("finance.budgets.pdfTax")}: ${new Intl.NumberFormat("pt-PT", { style: "currency", currency: "MZN" }).format(budget.tax || 0)}`, 14, finalY + 6);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:374: doc.text(`${t("finance.budgets.pdfTotal")}: ${new Intl.NumberFormat("pt-PT", { style: "currency", currency: "MZN" }).format(budget.total || 0)}`, 14, finalY + 12);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:380: doc.text(t("finance.budgets.pdfObservations"), 14, obsY);
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:388: toast.success(t("finance.budgets.pdfGenerated"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:391: toast.error(t("finance.budgets.pdfError"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:411: <h3 className="text-sm font-semibold">{t("finance.budgets.title")}</h3>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:412: <p className="text-xs text-muted-foreground">{t("finance.budgets.subtitle")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:415: <Plus className="h-3.5 w-3.5" /> {t("finance.budgets.create")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:422: <Label className="text-xs">{t("finance.budgets.searchPlaceholder")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:423: <Input className="h-9 text-xs" value={internalSearchNumber} onChange={(e) => setInternalSearchNumber(e.target.value)} placeholder={t("finance.budgets.searchPlaceholder")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:426: <Label className="text-xs">{t("finance.budgets.status")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:429: <SelectValue placeholder={t("finance.filters.all")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:432: <SelectItem value="all">{t("finance.filters.all")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:440: <Label className="text-xs">{t("finance.budgets.responsible")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:443: <SelectValue placeholder={t("finance.filters.all")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:446: <SelectItem value="all">{t("finance.filters.all")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:454: <Label className="text-xs">{t("finance.budgets.client")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:457: <SelectValue placeholder={t("finance.filters.all")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:460: <SelectItem value="all">{t("finance.filters.all")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:468: <Card className="p-10 text-center text-xs text-muted-foreground">{t("finance.budgets.loading")}</Card>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:470: <Card className="p-4 text-xs text-destructive">{t("finance.budgets.error")}: {error instanceof Error ? error.message : "—"}</Card>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:472: <Card className="p-10 text-center text-xs text-muted-foreground">{t("finance.budgets.empty.title")}</Card>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:478: <TableHead>{t("finance.budgets.tableNumber")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:479: <TableHead>{t("finance.budgets.client")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:480: <TableHead>{t("finance.budgets.tableProcess")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:481: <TableHead>{t("finance.budgets.tableDate")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:482: <TableHead>{t("finance.budgets.tableValidUntil")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:483: <TableHead>{t("finance.budgets.tableTotal")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:484: <TableHead>{t("finance.budgets.status")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:485: <TableHead>{t("finance.responsible")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:486: <TableHead className="text-right">{t("actions")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:529: <Button size="icon" variant="ghost" className="h-8 w-8" onClick={() => handleDownloadPdf(budget)} title={t("finance.budgets.downloadPdf")}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:532: <Button size="icon" variant="ghost" className="h-8 w-8" onClick={() => setViewing(budget)} title={t("view")}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:535: <Button size="icon" variant="ghost" className="h-8 w-8" onClick={() => openEdit(budget)} title={t("edit")}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:538: <Button size="icon" variant="ghost" className="h-8 w-8" onClick={() => handleDuplicate(budget.id)} title={t("duplicate")}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:541: <Button size="icon" variant="ghost" className="h-8 w-8" onClick={() => setConverting(budget)} title={t("finance.budgets.convert")}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:544: <Button size="icon" variant="ghost" className="h-8 w-8 text-destructive" onClick={() => setConfirmDelete(budget.id!)} title={t("delete")}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:559: <DialogTitle>{editing ? t("edit") : t("finance.budgets.create")}</DialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:564: <Label className="text-xs font-medium">{t("finance.budgets.client")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:567: <SelectValue placeholder={t("finance.budgets.selectClient")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:577: <Label className="text-xs font-medium">{t("finance.budgets.clientProcess")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:580: <SelectValue placeholder={t("finance.budgets.selectProcess")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:590: <Label className="text-xs font-medium">{t("finance.budgets.issueDate")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:598: <Label className="text-xs font-medium">{t("finance.budgets.validUntil")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:606: <Label className="text-xs font-medium">{t("finance.budgets.status")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:609: <SelectValue placeholder={t("finance.budgets.selectStatus")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:621: <Label className="text-xs font-medium">{t("finance.budgets.observations")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:627: placeholder={t("finance.budgets.observationsPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:633: <Label className="text-xs font-medium">{t("finance.budgets.services")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:635: <Plus className="h-3.5 w-3.5" /> {t("finance.budgets.addItem")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:642: <Label className="text-[10px] text-muted-foreground">{t("finance.budgets.tableDescription")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:643: <Input className="h-8 text-xs" value={item.description} onChange={(e) => updateItem(idx, { description: e.target.value })} placeholder={t("finance.budgets.descriptionPlaceholder")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:646: <Label className="text-[10px] text-muted-foreground">{t("finance.budgets.tableQty")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:650: <Label className="text-[10px] text-muted-foreground">{t("finance.budgets.tableUnitValue")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:654: <Label className="text-[10px] text-muted-foreground">{t("finance.budgets.tableTotal")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:666: <span>{t("finance.budgets.pdfSubtotal")}</span>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:672: <Button variant="outline" onClick={() => { setOpen(false); resetForm(); }}>{t("cancel")}</Button>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:675: {t("save")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:685: <DialogTitle>{t("view")} - {viewing?.numero}</DialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:688: <Download className="h-3.5 w-3.5" /> {t("finance.budgets.downloadPdf")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:697: <p className="text-[10px] text-muted-foreground">{t("finance.budgets.client")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:701: <p className="text-[10px] text-muted-foreground">{t("finance.budgets.status")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:705: <p className="text-[10px] text-muted-foreground">{t("amount")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:709: <p className="text-[10px] text-muted-foreground">{t("finance.budgets.balance")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:715: <p className="text-[10px] text-muted-foreground">{t("finance.budgets.observations")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:720: <p className="text-[10px] text-muted-foreground mb-1">{t("finance.budgets.services")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:724: <TableHead>{t("finance.budgets.tableDescription")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:725: <TableHead>{t("finance.budgets.tableQty")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:726: <TableHead>{t("finance.budgets.tableUnitValue")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:727: <TableHead>{t("finance.budgets.tableTotal")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:750: <AlertDialogTitle>{t("finance.budgets.confirmDelete")}</AlertDialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:751: <AlertDialogDescription>{t("finance.budgets.confirmDeleteDescription")}</AlertDialogDescription>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:754: <AlertDialogCancel onClick={() => setConfirmDelete(null)}>{t("cancel")}</AlertDialogCancel>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\budget-list.tsx:755: <AlertDialogAction onClick={handleDelete} className="bg-destructive text-destructive-foreground hover:bg-destructive/90">{t("delete")}</AlertDialogAction>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:250: toast.error(t("finance.invoices.addAtLeastOneItem"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:279: toast.success(t("finance.invoices.updated"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:282: toast.success(t("finance.invoices.created"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:289: toast.error(t("finance.invoices.migrationRequired"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:293: toast.error(t("finance.invoices.saveError"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:314: toast.success(t("finance.invoices.deleted"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:338: toast.error(t("finance.invoices.validPercentage"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:343: toast.error(t("finance.invoices.invalidCalculatedAmount"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:351: description: paymentTarget.numero ? `${t("finance.invoices.paymentFor")} ${Number(pct).toFixed(2).replace('.', ',')}% ${t("finance.invoices.ofInvoice")} ${paymentTarget.numero}` : t("finance.invoices.partialPayment"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:372: toast.error(t("finance.invoices.validAmount"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:381: description: paymentTarget.numero ? `${t("finance.invoices.paymentFor")} ${t("finance.invoices.invoice")} ${paymentTarget.numero}` : t("finance.invoices.partialPayment"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:413: <h3 className="text-sm font-semibold">{t("finance.invoices.title")}</h3>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:414: <p className="text-xs text-muted-foreground">{t("finance.invoices.subtitle")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:417: <Plus className="h-3.5 w-3.5" /> {t("finance.invoices.create")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:424: <Label className="text-xs">{t("finance.invoices.status")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:427: <SelectValue placeholder={t("finance.filters.all")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:430: <SelectItem value="all">{t("finance.filters.all")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:438: <Label className="text-xs">{t("finance.invoices.client")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:441: <SelectValue placeholder={t("finance.filters.all")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:444: <SelectItem value="all">{t("finance.filters.all")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:452: <Label className="text-xs">{t("finance.invoices.responsible")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:455: <SelectValue placeholder={t("finance.filters.all")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:458: <SelectItem value="all">{t("finance.filters.all")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:469: <Card className="p-10 text-center text-xs text-muted-foreground">{t("finance.invoices.loading")}</Card>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:471: <Card className="p-4 text-xs text-destructive">{t("finance.invoices.error")}: {error instanceof Error ? error.message : "—"}</Card>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:473: <Card className="p-10 text-center text-xs text-muted-foreground">{t("finance.invoices.empty")}</Card>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:479: <TableHead>{t("finance.invoices.tableNumber")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:480: <TableHead>{t("finance.invoices.client")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:481: <TableHead>{t("finance.invoices.tableTotal")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:482: <TableHead>{t("finance.invoices.tablePaidAmount")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:483: <TableHead>{t("finance.invoices.tableBalanceDue")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:484: <TableHead>{t("finance.invoices.status")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:485: <TableHead>{t("finance.invoices.tableDate")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:486: <TableHead>{t("finance.responsible")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:487: <TableHead className="text-right">{t("actions")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:510: <Button size="icon" variant="ghost" className="h-8 w-8" onClick={() => setViewing(inv)} title={t("view")}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:513: <Button size="icon" variant="ghost" className="h-8 w-8" onClick={() => openEdit(inv)} title={t("edit")}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:516: <Button size="icon" variant="ghost" className="h-8 w-8" onClick={() => openPayment(inv)} title={t("finance.invoices.registerPayment")}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:519: <Button size="icon" variant="ghost" className="h-8 w-8" onClick={() => onOpenReceipt && onOpenReceipt(inv)} title={t("finance.invoices.viewReceipts")}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:522: <Button size="icon" variant="ghost" className="h-8 w-8 text-destructive" onClick={() => setConfirmDelete(inv.id!)} title={t("delete")}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:538: <DialogTitle>{editing ? t("edit") : t("finance.invoices.create")}</DialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:543: <Label className="text-xs font-medium">{t("finance.invoices.client")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:546: <SelectValue placeholder={t("finance.invoices.selectClient")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:556: <Label className="text-xs font-medium">{t("finance.invoices.clientProcess")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:559: <SelectValue placeholder={t("finance.invoices.selectProcess")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:569: <Label className="text-xs font-medium">{t("finance.invoices.feeNote")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:572: <SelectValue placeholder={t("finance.invoices.selectFeeNote")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:587: <Label className="text-xs font-medium">{t("finance.invoices.dueDate")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:591: <Label className="text-xs font-medium">{t("finance.invoices.status")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:594: <SelectValue placeholder={t("finance.invoices.selectStatus")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:606: <Label className="text-xs font-medium">{t("finance.invoices.observations")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:612: placeholder={t("finance.invoices.observationsPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:618: <Label className="text-xs font-medium">{t("finance.invoices.items")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:620: <Plus className="h-3.5 w-3.5" /> {t("finance.invoices.addItem")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:627: <Label className="text-[10px] text-muted-foreground">{t("finance.invoices.tableDescription")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:628: <Input className="h-8 text-xs" value={item.description} onChange={(e) => updateItem(idx, { description: e.target.value })} placeholder={t("finance.invoices.descriptionPlaceholder")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:631: <Label className="text-[10px] text-muted-foreground">{t("finance.invoices.tableQty")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:635: <Label className="text-[10px] text-muted-foreground">{t("finance.invoices.tableUnitValue")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:639: <Label className="text-[10px] text-muted-foreground">{t("finance.invoices.tableTotal")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:651: <span>{t("finance.invoices.subtotal")}</span>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:657: <Button variant="outline" onClick={() => { setOpen(false); resetForm(); }}>{t("cancel")}</Button>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:660: {t("save")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:669: <DialogTitle>{t("view")} - {viewing?.numero}</DialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:675: <p className="text-[10px] text-muted-foreground">{t("finance.invoices.client")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:679: <p className="text-[10px] text-muted-foreground">{t("finance.invoices.status")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:683: <p className="text-[10px] text-muted-foreground">{t("amount")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:687: <p className="text-[10px] text-muted-foreground">{t("finance.invoices.balance")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:693: <p className="text-[10px] text-muted-foreground">{t("finance.invoices.observations")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:698: <p className="text-[10px] text-muted-foreground mb-1">{t("finance.invoices.items")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:702: <TableHead>{t("finance.invoices.tableDescription")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:703: <TableHead>{t("finance.invoices.tableQty")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:704: <TableHead>{t("finance.invoices.tableUnitValue")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:705: <TableHead>{t("finance.invoices.tableTotal")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:728: <DialogTitle>{t("finance.invoices.registerPayment")} - {paymentTarget?.numero}</DialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:734: <p className="text-[10px] text-muted-foreground">{t("finance.invoices.client")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:738: <p className="text-[10px] text-muted-foreground">{t("amount")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:742: <p className="text-[10px] text-muted-foreground">{t("finance.invoices.receivedAmount")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:746: <p className="text-[10px] text-muted-foreground">{t("finance.invoices.balance")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:754: <Label className="text-xs font-medium">{t("finance.invoices.paymentAmount")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:757: {t("finance.invoices.usePercent")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:769: {t("finance.invoices.available")}: {new Intl.NumberFormat(language === "en" ? "en-US" : "pt-PT", { style: "currency", currency: "MZN" }).format((paymentTarget.total || 0) - (paymentTarget.paid_amount || 0))}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:773: <Label className="text-xs font-medium">{t("finance.invoices.paymentMethod")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:779: <SelectItem value="transferencia">{t("finance.paymentMethods.transfer")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:780: <SelectItem value="dinheiro">{t("finance.paymentMethods.cash")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:781: <SelectItem value="pos">{t("finance.paymentMethods.card")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:782: <SelectItem value="cheque">{t("finance.paymentMethods.check")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:783: <SelectItem value="mpesa">{t("finance.paymentMethods.mpesa")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:784: <SelectItem value="emola">{t("finance.paymentMethods.emola")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:785: <SelectItem value="banco">{t("finance.paymentMethods.bank")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:786: <SelectItem value="outro">{t("finance.paymentMethods.other")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:791: <Label className="text-xs font-medium">{t("finance.invoices.paymentDate")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:795: <Label className="text-xs font-medium">{t("finance.invoices.notes")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:796: <Textarea className="text-xs" rows={2} value={paymentNotes} onChange={(e) => setPaymentNotes(e.target.value)} placeholder={t("finance.invoices.notesPlaceholder")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:801: <span>{t("finance.invoices.paymentValue")}</span>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:807: <Button variant="outline" onClick={() => setPaymentTarget(null)}>{t("cancel")}</Button>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:810: {t("finance.invoices.registerPayment")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:819: <AlertDialogTitle>{t("finance.invoices.confirmDelete")}</AlertDialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:820: <AlertDialogDescription>{t("finance.invoices.confirmDeleteDescription")}</AlertDialogDescription>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:823: <AlertDialogCancel onClick={() => setConfirmDelete(null)}>{t("cancel")}</AlertDialogCancel>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\invoice-list.tsx:824: <AlertDialogAction onClick={handleDelete} className="bg-destructive text-destructive-foreground hover:bg-destructive/90">{t("delete")}</AlertDialogAction>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:387: <Label className="text-xs">{t("finance.receipts.tableNumber")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:388: <Input className="h-9 text-xs" value={internalFilterNumber} onChange={(e) => setInternalFilterNumber(e.target.value)} placeholder={t("finance.receipts.searchPlaceholder")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:391: <Label className="text-xs">{t("finance.paymentMethods.title")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:394: <SelectValue placeholder={t("finance.filters.all")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:397: <SelectItem value="all">{t("finance.filters.all")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:403: <Label className="text-xs">{t("finance.responsible")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:406: <SelectValue placeholder={t("finance.filters.all")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:409: <SelectItem value="all">{t("finance.filters.all")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:427: <TableHead>{t("finance.receipts.tableNumber")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:428: <TableHead>{t("amount")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:429: <TableHead>{t("finance.paymentMethods.method")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:430: <TableHead>{t("date")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:431: <TableHead>{t("description")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:432: <TableHead>{t("finance.responsible")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:433: <TableHead className="text-right">{t("actions")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:461: <Button size="icon" variant="ghost" className="h-8 w-8" onClick={() => setViewing(rec)} title={t("view")}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:464: <Button size="icon" variant="ghost" className="h-8 w-8" onClick={() => openPrintableView(rec)} title={t("print")}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:467: <Button size="icon" variant="ghost" className="h-8 w-8" onClick={async () => await handleDownloadPdf(rec)} title={t("download")}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:483: <DialogTitle>{t("view")} - {viewing?.receipt_number}</DialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:489: <p className="text-[10px] text-muted-foreground">{t("amount")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:493: <p className="text-[10px] text-muted-foreground">{t("finance.paymentMethods.method")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:497: <p className="text-[10px] text-muted-foreground">{t("date")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:501: <p className="text-[10px] text-muted-foreground">{t("finance.receipts.generatedAt")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:507: <p className="text-[10px] text-muted-foreground font-semibold uppercase">{t("finance.receipts.company")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:513: <p className="text-[10px] text-muted-foreground">{t("description")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:519: <p className="text-[10px] text-muted-foreground">{t("client")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:527: <p className="text-[10px] text-muted-foreground">{t("finance.receipts.reference")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:538: <p className="text-[10px] text-muted-foreground">{t("finance.responsible")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:545: <Button variant="outline" onClick={() => setViewing(null)}>{t("close")}</Button>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:547: <Printer className="mr-2 h-4 w-4" /> {t("print")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\finance\receipts-table.tsx:550: <Download className="mr-2 h-4 w-4" /> {t("downloadPDF")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:1081: {t("cancel")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:1088: {t("save")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:1198: <th className="px-4 py-3 font-medium">{t("description")}</th>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:1199: <th className="px-4 py-3 font-medium">{t("amount")}</th>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:1201: {type === "receita" ? t("client") : t("professional")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:1211: <th className="px-4 py-3 font-medium">{t("status")}</th>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:1212: <th className="px-4 py-3 font-medium w-24">{t("actions")}</th>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:1243: <span className="text-xs">{t("yes")}</span>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:1280: ? t("overdue")
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:1377: <AlertDialogTitle>{t("finance.confirmDelete")}</AlertDialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:1379: {t("finance.confirmDelete")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:1384: {t("cancel")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:1399: {t("delete")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:1497: {t("add")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:703: <Label>{t("description")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:713: <Label>{t("amount")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:747: <Label>{t("client")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\financial-transactions-table.tsx:768: <Label>{t("process")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\leads-table.tsx:81: <p className="text-xs text-muted-foreground">{t("client")} #{lead.id}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\leads-table.tsx:85: <td className="px-6 py-4 text-foreground/90">{lead.neighborhood || t("none")}</td>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\leads-table.tsx:86: <td className="px-6 py-4 font-medium text-foreground">{lead.reference || t("none")}</td>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\leads-table.tsx:90: <td className="px-6 py-4 text-foreground/80">{lead.visit || t("none")}</td>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\leads-table.tsx:95: {lead.notes || t("none")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\legal-guidance-dialog.tsx:211: <Meta label="Processo" value={hearing.processo_numero ?? t("none")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\legal-guidance-dialog.tsx:325: <p>{t("none")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\page-header.tsx:37: <SelectItem value="pt">{t("languages.pt")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\page-header.tsx:38: <SelectItem value="en">{t("languages.en")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\processo-form-dialog.tsx:232: Número do Processo <span className="text-muted-foreground/60">{t("optional")}</span>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\processo-form-dialog.tsx:321: <Label className="text-xs text-muted-foreground">{t("priority")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\processo-form-dialog.tsx:339: <Label className="text-xs text-muted-foreground">{t("status")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\processo-form-dialog.tsx:354: <Label className="text-xs text-muted-foreground">{t("responsibleLawyer")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\processo-form-dialog.tsx:462: <Label className="text-xs text-muted-foreground">{t("description")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\processo-form-dialog.tsx:483: {t("cancel")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\processo-form-dialog.tsx:487: {t("save")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\property-card.tsx:32: ? t("active")
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\property-card.tsx:34: ? t("inactive")
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\property-card.tsx:99: {t("amount")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\protected-route.tsx:131: search={{ error: t("errors.companyNotConfigured") }}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\protected-route.tsx:145: toast.error(t("errors.noPermission"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\protected-route.tsx:158: toast.error(t("errors.noPermission"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\protected-route.tsx:175: <Redirect to="/login" search={{ error: t("errors.noPermission") }} replace />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\protected-route.tsx:215: toast.error(t("errors.noPermission"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\super-admin-sidebar.tsx:192: const loadingToast = toast.loading(t("loading") + "...");
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\super-admin-sidebar.tsx:196: toast.success(t("signOut") + "!");
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\super-admin-sidebar.tsx:211: <span>{t("signOut")}</span>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\super-admin-sidebar.tsx:216: <AlertDialogTitle>{t("signOut")}</AlertDialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\super-admin-sidebar.tsx:217: <AlertDialogDescription>{t("logoutConfirmDesc")}</AlertDialogDescription>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\super-admin-sidebar.tsx:220: <AlertDialogCancel>{t("cancel")}</AlertDialogCancel>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\super-admin-sidebar.tsx:222: {t("signOut")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\super-admin-sidebar.tsx:61: { title: t("dashboardTitle"), url: "/super-admin", icon: LayoutDashboard },
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\super-admin-sidebar.tsx:62: { title: t("company"), url: "/super-admin/empresas", icon: Building2 },
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\super-admin-sidebar.tsx:63: { title: t("finances"), url: "/super-admin/financeiro", icon: BarChart3 },
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\super-admin-sidebar.tsx:66: { title: t("configuracoes"), url: "/super-admin/configuracoes", icon: Settings },
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\tiptap-editor.tsx:263: <TabsTrigger value="cliente">{t("client")}</TabsTrigger>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\components\tiptap-editor.tsx:264: <TabsTrigger value="processo">{t("process")}</TabsTrigger>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\lib\supabase-error-handler.tsx:371: {showDetails ? t("errors.hideDetails") : t("errors.seeDetails")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\admin.empresas.$companyId.tsx:134: <PageHeader title={t("admin.companyDetails")} subtitle={company?.nome ?? ""} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\admin.empresas.tsx:230: <PageHeader title={t("admin.companies")} subtitle={t("admin.companiesSubtitle")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\admin.empresas.tsx:236: <p className="text-sm text-muted-foreground">{t("admin.totalCompanies")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\admin.empresas.tsx:240: <p className="text-sm text-muted-foreground">{t("admin.activeCompanies")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\admin.empresas.tsx:262: placeholder={t("search") + "..."}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\admin.painel-executivo.tsx:28: title={t("adminDashboard")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\admin.painel-executivo.tsx:29: subtitle={t("adminDashboardSubtitle")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\agenda.tsx:164: <PageHeader title={t("agenda")} subtitle={t("nav.agenda")} showSearch={false} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:329: <PageHeader title={t("audiencias")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:344: <PageHeader title={t("audiencias")} subtitle={t("nav.audiencias")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:350: placeholder={t("search") + "..."}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:458: title={t("nav.audienciasActions.markCompleted")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:467: title={t("nav.audienciasActions.markCancelled")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:478: title={t("edit")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:487: title={t("nav.audienciasActions.legalGuidance")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:496: title={t("delete")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:515: <DialogTitle>{editingAudiencia ? t("nav.audienciasActions.edit") : t("nav.audienciasActions.new")}</DialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:523: <SelectValue placeholder={t("selectProcess")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:550: <Input value={form.court_name} onChange={(e) => setForm({ ...form, court_name: e.target.value })} placeholder={t("court")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:555: <Input value={form.city} onChange={(e) => setForm({ ...form, city: e.target.value })} placeholder={t("city")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:559: <Input value={form.judge_name} onChange={(e) => setForm({ ...form, judge_name: e.target.value })} placeholder={t("judge")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:564: <Textarea value={form.notes} onChange={(e) => setForm({ ...form, notes: e.target.value })} placeholder={t("notes")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:617: <SelectValue placeholder={t("selectCaseType")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:636: placeholder={t("legalGuidancePlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\audiencias.tsx:648: placeholder={t("legalGuidancePeople")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\automacao.tsx:23: <PageHeader title={t("automacao")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:198: toast.success(t("clients.toasts.deleted"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:243: <PageHeader title={t("clients.title")} subtitle={t("clients.subtitle")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:248: <StatCard label={t("clients.stats.total")} value={stats.total} icon={Users} accent="bg-primary/10 text-primary" />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:249: <StatCard label={t("clients.stats.active")} value={stats.ativos} icon={UserCheck} accent="bg-success/10 text-success" />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:250: <StatCard label={t("clients.stats.archived")} value={stats.arquivados} icon={Archive} accent="bg-destructive/10 text-destructive" />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:258: placeholder={t("clients.searchPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:265: <Plus className="h-4 w-4" /> {t("clients.addClient")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:280: {t("clients.myClients")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:291: {t("clients.allClients")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:303: <p className="mt-3 text-sm font-medium text-foreground">{t("clients.emptyTitle")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:304: <p className="text-xs text-muted-foreground">{t("clients.emptyHint")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:311: <TableHead>{t("clients.columns.nome")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:312: <TableHead>{t("clients.columns.telefone")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:313: <TableHead>{t("clients.columns.email")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:314: <TableHead>{t("clients.columns.cidade")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:315: <TableHead>{t("clients.columns.documento")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:316: <TableHead>{t("clients.columns.advogado")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:317: <TableHead>{t("clients.columns.dataCadastro")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:318: <TableHead>{t("clients.columns.estado")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:319: <TableHead className="text-right">{t("clients.columns.acoes")}</TableHead>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:360: <Eye className="h-3.5 w-3.5 mr-2" /> {t("clients.showProcesses")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:363: <Pencil className="h-3.5 w-3.5 mr-2" /> {t("clients.editClient")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:369: <Trash2 className="h-3.5 w-3.5 mr-2" /> {t("clients.deleteClient")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:399: <AlertDialogTitle>{t("clients.confirmDeleteTitle")}</AlertDialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:400: <AlertDialogDescription>{t("clients.confirmDelete")}</AlertDialogDescription>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:403: <AlertDialogCancel>{t("cancel")}</AlertDialogCancel>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:405: {t("delete")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:414: <SheetTitle>{t("clients.detail.associatedProcesses")}</SheetTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:416: {loadingProcesses ? t("loading") ?? "A carregar..." : ""}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.clientes.tsx:422: {t("clients.detail.noProcesses")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.profissionais.tsx:267: return role === "admin" ? t("profile.roles.admin", { defaultValue: "Administrador" }) : t("professional");
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.profissionais.tsx:290: <PageHeader title={t("nav.profissionais")} subtitle={company ? `${company.nome}` : ""} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.profissionais.tsx:296: placeholder={t("search") + "..."}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.profissionais.tsx:324: <Label className="text-xs text-muted-foreground">{t("fullName")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.profissionais.tsx:328: placeholder={t("fullName")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.profissionais.tsx:332: <Label className="text-xs text-muted-foreground">{t("phone")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.profissionais.tsx:336: placeholder={t("phone")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.profissionais.tsx:348: placeholder={t("email")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.profissionais.tsx:352: <Label className="text-xs text-muted-foreground">{t("phone")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.profissionais.tsx:356: placeholder={t("phone")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.profissionais.tsx:372: <SelectItem value="professional">{t("professional")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.profissionais.tsx:396: <Button variant="outline" onClick={() => { setOpen(false); setEditProfile(null); }}>{t("cancel")}</Button>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.profissionais.tsx:451: <Button size="icon" variant="ghost" className="text-info" onClick={() => resendInvite(p)} title={t("resendInvite")}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\cadastros.profissionais.tsx:454: <Button size="icon" variant="ghost" className="text-destructive" onClick={() => cancelInvite(p)} title={t("cancelInvite")}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\configuracoes.tsx:104: label: t("settings.about"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\configuracoes.tsx:129: <PageHeader title={t("settings.title")} subtitle={t("nav.sistema")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\configuracoes.tsx:266: <Label className="text-xs text-muted-foreground">{t("fullName")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\configuracoes.tsx:272: <p className="text-xs text-muted-foreground">{t("email")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\configuracoes.tsx:64: label: t("settings.profile"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\configuracoes.tsx:70: label: t("settings.company"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\configuracoes.tsx:77: label: t("settings.security"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\configuracoes.tsx:83: label: t("settings.language"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\configuracoes.tsx:90: label: t("settings.notifications"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\configuracoes.tsx:98: label: t("settings.suggestions"),
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\contratos.tsx:105: {t("nav.modelosContrato")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\contratos.tsx:235: placeholder={t("clients.searchPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\contratos.tsx:296: <IconBtn title={t("view")} onClick={() => setViewing(c)}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\contratos.tsx:300: title={t("downloadPDF")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\contratos.tsx:307: <IconBtn title={t("edit")} onClick={() => openEditExisting(c)}>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\contratos.tsx:311: title={t("delete")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\contratos.tsx:371: {t("downloadPDF")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\contratos.tsx:387: <AlertDialogCancel onClick={() => setConfirmDeleteId(null)}>{t("cancel")}</AlertDialogCancel>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\contratos.tsx:392: {t("delete")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\contratos.tsx:617: placeholder={t("clients.searchPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\contratos.tsx:672: <SelectValue placeholder={t("selectProcess")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\contratos.tsx:698: {step === 1 ? t("cancel") : t("back")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\contratos.tsx:99: <PageHeader title={t("nav.contratos")} subtitle={t("nav.contratos")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:139: <PageHeader title={t("companySettings")} subtitle={company?.nome} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:143: <h2 className="text-lg font-semibold mb-4">{t("companySettings")}</h2>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:147: <Label>{t("companyName")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:156: <Label>{t("email")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:166: <Label>{t("phone")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:175: <Label>{t("nuit")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:184: <Label>{t("address")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:193: <Label>{t("city")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:202: <Label>{t("country")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:211: <Label>{t("website")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:222: <h2 className="text-lg font-semibold mb-4">{t("selectCurrency")}</h2>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:226: <Label>{t("selectLanguage")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:243: <Label>{t("selectCurrency")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:263: <Label>{t("selectTimezone")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:283: <Label>{t("selectDateFormat")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:303: <Label>{t("uploadLogo")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:316: {t("cancel")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:320: {t("save")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\empresa.tsx:71: toast.success(t("success"));
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.despesas.tsx:36: {t("finance.expenses.newExpense")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.despesas.tsx:40: {t("finance.expenses.exportReport")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:100: <SelectValue placeholder={t("finance.filters.all")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:103: <SelectItem value="all">{t("finance.filters.all")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:124: <Label className="text-xs">{t("finance.invoices.searchPlaceholder")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:129: placeholder={t("finance.invoices.searchPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:133: <Label className="text-xs">{t("finance.invoices.status")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:139: <SelectValue placeholder={t("finance.filters.all")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:142: <SelectItem value="all">{t("finance.filters.all")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:157: <Label className="text-xs">{t("finance.invoices.client")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:163: <SelectValue placeholder={t("finance.filters.all")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:166: <SelectItem value="all">{t("finance.filters.all")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:181: <Label className="text-xs">{t("finance.receipts.searchPlaceholder")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:186: placeholder={t("finance.receipts.searchPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:190: <Label className="text-xs">{t("finance.paymentMethods.title")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:196: <SelectValue placeholder={t("finance.filters.all")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:199: <SelectItem value="all">{t("finance.filters.all")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:62: {t("finance.budgets.title")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:69: {t("finance.invoices.title")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:76: {t("finance.receipts.title")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:85: <Label className="text-xs">{t("finance.budgets.searchPlaceholder")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:90: placeholder={t("finance.budgets.searchPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\financas.recebimentos.tsx:94: <Label className="text-xs">{t("finance.budgets.status")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\imoveis.tsx:23: <PageHeader title={t("imoveis")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\index.tsx:45: <PageHeader title={t("dashboardTitle")} subtitle={t("dashboard.subtitle")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\index.tsx:50: label={t("dashboard.totalClients")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\index.tsx:56: label={t("dashboard.activeCases")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\index.tsx:62: label={t("dashboard.hearingsToday")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\index.tsx:68: label={t("dashboard.hearingsWeek")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\index.tsx:78: <AlertTriangle className="h-4 w-4 text-warning" /> {t("attention")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\index.tsx:82: <p className="text-sm text-muted-foreground">{t("noAttentionItems")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\index.tsx:83: <p className="text-xs text-muted-foreground">{t("noAttentionItemsSubtitle")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\leads.tsx:23: <PageHeader title={t("leads")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\login.tsx:120: {t("signIn")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\login.tsx:125: {t("noAccount")}{" "}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\login.tsx:127: {t("register")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\login.tsx:62: <SelectItem value="pt">{t("languages.pt")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\login.tsx:63: <SelectItem value="en">{t("languages.en")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\login.tsx:69: <h1 className="text-2xl font-semibold tracking-tight">{t("loginTitle")}</h1>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\login.tsx:70: <p className="text-sm text-muted-foreground">{t("loginSubtitle")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\login.tsx:75: <Label htmlFor="email">{t("email")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\login.tsx:88: <Label htmlFor="password">{t("password")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.$id.tsx:143: <SelectItem value="active">{t("modelStatusActive")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.$id.tsx:144: <SelectItem value="archived">{t("modelStatusArchived")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.$id.tsx:165: {t("cancel")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.$id.tsx:169: {t("save")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.$id.tsx:94: title={t("editModel")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:245: placeholder={t("searchPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:253: <SelectValue placeholder={t("filterByCategory")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:278: <Plus className="h-4 w-4" /> {t("newModel")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:286: <p className="mt-3 text-sm font-medium text-foreground">{t("noModels")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:287: <p className="text-xs text-muted-foreground">{t("noModelsDesc")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:301: <th className="px-4 py-3 font-medium">{t("author")}</th>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:303: {t("updatedAt")} {sort.field === "updated_at" && (sort.dir === "asc" ? "↑" : "↓")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:305: <th className="px-4 py-3 font-medium">{t("modelStatus")}</th>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:328: {m.status === "active" ? t("modelStatusActive") : t("modelStatusArchived")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:338: title={t("edit")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:347: title={t("duplicate")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:356: title={m.status === "active" ? t("archive") : t("modelStatusActive")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:369: title={t("delete")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:400: <AlertDialogTitle>{t("confirmDelete")}</AlertDialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:402: {t("confirmDelete")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:407: {t("cancel")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:410: {t("delete")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\modelos.tsx:425: <PageHeader title={t("modelosContrato")} subtitle={t("modelosContratoSubtitle")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\processos.$id.tsx:1315: <AlertDialogTitle>{t("process.confirmDelete")}</AlertDialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\processos.$id.tsx:1316: <AlertDialogDescription>{t("process.confirmDelete")}</AlertDialogDescription>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\processos.$id.tsx:1319: <AlertDialogCancel onClick={() => setConfirmDelete(false)}>{t("cancel")}</AlertDialogCancel>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\processos.$id.tsx:1321: {t("delete")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\processos.tsx:819: <AlertDialogTitle>{t("process.confirmArchive")}</AlertDialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\processos.tsx:821: {t("process.confirmArchive")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\processos.tsx:826: {t("cancel")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\processos.tsx:829: {t("archive")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\processos.tsx:838: <AlertDialogTitle>{t("process.confirmDelete")}</AlertDialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\processos.tsx:840: {t("process.confirmDelete")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\processos.tsx:845: {t("cancel")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\processos.tsx:848: {t("delete")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\signup.tsx:105: <Label htmlFor="email">{t("email")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\signup.tsx:118: <Label htmlFor="password">{t("password")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\signup.tsx:150: <Label htmlFor="confirmPassword">{t("confirmPassword")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\signup.tsx:183: {success ? t("registerSuccess", { defaultValue: "Conta criada com sucesso!" }) : t("register")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\signup.tsx:194: {t("haveAccount")}{" "}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\signup.tsx:196: {t("signIn")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\signup.tsx:80: <SelectItem value="pt">{t("languages.pt")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\signup.tsx:81: <SelectItem value="en">{t("languages.en")}</SelectItem>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\signup.tsx:87: <h1 className="text-2xl font-semibold tracking-tight">{t("register")}</h1>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\signup.tsx:93: <Label htmlFor="fullName">{t("fullName")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\sobre.tsx:30: <PageHeader title={t("settings.about")} subtitle={APP_NAME} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\sugestoes.tsx:50: <PageHeader title={t("settings.suggestions")} subtitle={t("suggestions.subtitle", { defaultValue: "Envie a sua sugestão" })} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\sugestoes.tsx:58: <h2 className="text-lg font-semibold">{t("settings.suggestions")}</h2>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\super-admin.index.tsx:39: <PageHeader title={t("superAdmin.dashboard")} subtitle={t("superAdmin.dashboardSubtitle")} showSearch={false} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\super-admin.index.tsx:55: <PageHeader title={t("superAdmin.dashboard")} subtitle={t("superAdmin.dashboardSubtitle")} showSearch={false} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\super-admin.index.tsx:58: {t("superAdmin.loadError")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\super-admin.index.tsx:71: <PageHeader title={t("superAdmin.dashboard")} subtitle={t("superAdmin.dashboardSubtitle")} showSearch={false} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\super-admin.index.tsx:81: <StatCard label={t("superAdmin.dashboardStats.totalCompanies")} value={stats?.totalCompanies ?? 0} icon={Building2} accent="primary" />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\super-admin.index.tsx:82: <StatCard label={t("superAdmin.dashboardStats.activeCompanies")} value={stats?.activeCompanies ?? 0} icon={CheckCircle2} accent="success" />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\super-admin.index.tsx:83: <StatCard label={t("superAdmin.dashboardStats.suspendedCompanies")} value={stats?.suspendedCompanies ?? 0} icon={Ban} accent="destructive" />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\super-admin.index.tsx:84: <StatCard label={t("superAdmin.dashboardStats.createdToday")} value={stats?.createdToday ?? 0} icon={CalendarDays} accent="info" />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\super-admin.index.tsx:88: <StatCard label={t("superAdmin.dashboardStats.createdThisWeek")} value={stats?.createdThisWeek ?? 0} icon={CalendarClock} accent="info" />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\super-admin.index.tsx:89: <StatCard label={t("superAdmin.dashboardStats.createdThisMonth")} value={stats?.createdThisMonth ?? 0} icon={TrendingUp} accent="primary" />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\super-admin.index.tsx:90: <StatCard label={t("superAdmin.dashboardStats.offices")} value={stats?.offices ?? 0} icon={Briefcase} accent="primary" />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\super-admin.index.tsx:91: <StatCard label={t("superAdmin.dashboardStats.freelancers")} value={stats?.freelancers ?? 0} icon={UserCircle2} accent="warning" />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\tarefas.tsx:116: <PageHeader title={t("tarefas")} />
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\tarefas.tsx:132: title={t("tarefas")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\tarefas.tsx:144: <DialogTitle>{t("tarefas.addTask")}</DialogTitle>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\tarefas.tsx:148: <Label>{t("tarefas.taskForm.title")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\tarefas.tsx:152: placeholder={t("tarefas.taskForm.titlePlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\tarefas.tsx:156: <Label>{t("tarefas.taskForm.description")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\tarefas.tsx:160: placeholder={t("tarefas.taskForm.descriptionPlaceholder")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\tarefas.tsx:164: <Label>{t("tarefas.taskForm.taskDate")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\tarefas.tsx:173: <Label>{t("tarefas.taskForm.reminderDate")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\tarefas.tsx:181: <Label>{t("tarefas.taskForm.reminderTime")}</Label>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\tarefas.tsx:191: {t("tarefas.taskForm.cancel")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\tarefas.tsx:198: {t("tarefas.taskForm.create")}
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\tarefas.tsx:210: <p className="mt-3 text-sm font-medium text-foreground">{t("tarefas.empty.title")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\tarefas.tsx:211: <p className="text-xs text-muted-foreground">{t("tarefas.empty.subtitle")}</p>
+C:\Users\the exceed\Documents\lunaiadvocacia\src\routes\tarefas.tsx:229: {task.processo_id && <span>{t("tarefas.processLabel")} {task.processo_id}</span>}

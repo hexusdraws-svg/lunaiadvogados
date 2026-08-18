@@ -1,0 +1,808 @@
+@import "tailwindcss" source(none);
+
+@source "../src";
+
+@import "tw-animate-css";
+
+
+
+@custom-variant dark (&:is(.dark *));
+
+
+
+@theme inline {
+
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --radius-md: calc(var(--radius) - 2px);
+
+  --radius-lg: var(--radius);
+
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --color-background: var(--background);
+
+  --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+
+  --color-input: var(--input);
+
+  --color-ring: var(--ring);
+
+  --color-success: var(--success);
+
+  --color-warning: var(--warning);
+
+  --color-info: var(--info);
+
+  --color-sidebar: var(--sidebar);
+
+  --color-sidebar-foreground: var(--sidebar-foreground);
+
+  --color-sidebar-primary: var(--sidebar-primary);
+
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+
+  --color-sidebar-accent: var(--sidebar-accent);
+
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+
+  --color-sidebar-border: var(--sidebar-border);
+
+  --color-sidebar-ring: var(--sidebar-ring);
+
+}
+
+
+
+:root {
+
+  --radius: 0.875rem;
+
+
+
+  /* Noir + Gold — no blue, warm neutrals only */
+
+  --background: hsl(0 0% 8%);
+
+  --foreground: hsl(38 10% 96%);
+
+
+
+  --card: hsl(0 0% 11%);
+
+  --card-foreground: hsl(38 10% 96%);
+
+
+
+  --popover: hsl(0 0% 11%);
+
+  --popover-foreground: hsl(38 10% 96%);
+
+
+
+  --primary: hsl(38 80% 50%);
+
+  --primary-foreground: hsl(0 0% 8%);
+
+
+
+  --secondary: hsl(0 0% 16%);
+
+  --secondary-foreground: hsl(38 8% 82%);
+
+
+
+  --muted: hsl(0 0% 14%);
+
+  --muted-foreground: hsl(0 0% 72%);
+
+
+
+  --accent: hsl(38 80% 50%);
+
+  --accent-foreground: hsl(0 0% 8%);
+
+
+
+  --destructive: hsl(0 70% 55%);
+
+  --destructive-foreground: hsl(0 0% 98%);
+
+
+
+  --success: hsl(140 40% 42%);
+
+  --warning: hsl(35 90% 45%);
+
+  --info: hsl(30 10% 70%);
+
+
+
+  --border: hsla(0 0% 55% / 0.18);
+
+  --input: hsl(0 0% 16%);
+
+  --ring: hsl(38 80% 50%);
+
+
+
+  --sidebar: hsl(0 0% 6%);
+
+  --sidebar-foreground: hsl(38 10% 80%);
+
+  --sidebar-primary: hsl(38 80% 50%);
+
+  --sidebar-primary-foreground: hsl(0 0% 8%);
+
+  --sidebar-accent: hsl(0 0% 13%);
+
+  --sidebar-accent-foreground: hsl(38 10% 90%);
+
+  --sidebar-border: hsla(0 0% 55% / 0.18);
+
+  --sidebar-ring: hsl(38 80% 50%);
+
+
+
+  --gradient-primary: linear-gradient(135deg, hsl(38 80% 48%), hsl(35 90% 52%));
+
+  --gradient-surface: linear-gradient(180deg, hsla(0 0% 14% / 0.95), hsla(0 0% 11% / 0.8));
+
+  --shadow-glow: 0 0 0 1px hsla(38 80% 50% / 0.22), 0 10px 40px -10px hsla(38 80% 50% / 0.25);
+
+  --shadow-card: 0 1px 0 0 hsla(0 0% 100% / 0.04) inset, 0 20px 60px -30px hsla(0 0% 0% / 0.6);
+
+}
+
+
+
+@layer base {
+
+  * {
+
+    border-color: var(--color-border);
+
+  }
+
+
+
+  html,
+
+  body,
+
+  #root {
+
+    background-color: var(--color-background);
+
+    color: var(--color-foreground);
+
+    min-height: 100%;
+
+  }
+
+
+
+  body {
+
+    font-feature-settings: "cv11", "ss01";
+
+    background-image:
+
+      radial-gradient(1200px 600px at 10% -10%, hsla(38 75% 52% / 0.1), transparent 60%),
+
+      radial-gradient(900px 500px at 90% 0%, hsla(215 65% 52% / 0.1), transparent 60%);
+
+    background-attachment: fixed;
+
+  }
+
+}
+
+
+
+@layer utilities {
+
+  .glass {
+
+    background: var(--gradient-surface);
+
+    backdrop-filter: blur(14px) saturate(140%);
+
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+
+    box-shadow: var(--shadow-card);
+
+  }
+
+  .gradient-text {
+
+    background: var(--gradient-primary);
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    color: transparent;
+
+  }
+
+  .glow-ring {
+
+    box-shadow: var(--shadow-glow);
+
+  }
+
+
+
+  /* Bell wiggle animation for new notifications */
+
+  @keyframes bell-wiggle {
+
+    0%,
+
+    100% {
+
+      transform: rotate(0);
+
+    }
+
+    25% {
+
+      transform: rotate(-15deg);
+
+    }
+
+    75% {
+
+      transform: rotate(15deg);
+
+    }
+
+  }
+
+  .animate-bell-wiggle {
+
+    animation: bell-wiggle 1s ease-in-out;
+
+  }
+
+}
+
+
+
+/* Contract variable chips */
+
+[data-variable="contract-variable"] {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  border-radius: 4px;
+
+  padding: 1px 6px;
+
+  margin: 0 1px;
+
+  font-size: 0.85em;
+
+  font-weight: 500;
+
+  background: #eff6ff;
+
+  color: #1d4ed8;
+
+  border: 1px solid #bfdbfe;
+
+  white-space: nowrap;
+
+  vertical-align: baseline;
+
+}
+
+
+
+/* A4 document editor (TipTap paper mode) — legacy single page */
+
+.tiptap-a4 {
+
+  width: 210mm;
+
+  min-height: 297mm;
+
+  padding: 25mm 22mm;
+
+  margin: 0 auto 24px;
+
+  background: #ffffff;
+
+  color: #111;
+
+  box-shadow:
+
+    0 10px 40px -10px rgba(0, 0, 0, 0.6),
+
+    0 0 0 1px rgba(255, 255, 255, 0.04);
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 12pt;
+
+  line-height: 1.55;
+
+}
+
+
+
+/* A4 multi-page editor (Word-like) */
+
+.a4-scroll {
+
+  scroll-behavior: smooth;
+
+}
+
+
+
+.a4-canvas {
+
+  position: relative;
+
+}
+
+
+
+.a4-pages {
+
+  z-index: 0;
+
+}
+
+
+
+.a4-page {
+
+  position: relative;
+
+  box-sizing: border-box;
+
+  padding: 25mm 22mm;
+
+  background: #ffffff;
+
+  color: #111;
+
+  box-shadow:
+
+    0 10px 40px -10px rgba(0, 0, 0, 0.6),
+
+    0 0 0 1px rgba(255, 255, 255, 0.04);
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 12pt;
+
+  line-height: 1.55;
+
+}
+
+
+
+.a4-page-number {
+
+  position: absolute;
+
+  bottom: 10mm;
+
+  left: 0;
+
+  right: 0;
+
+  text-align: center;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 9pt;
+
+  color: #6b7280;
+
+}
+
+
+
+/* Editable overlay aligned with the page sheets */
+
+.tiptap-page-editor {
+
+  box-sizing: border-box;
+
+  width: 210mm;
+
+  min-height: 297mm;
+
+  margin: 0 auto;
+
+  padding: 25mm 22mm;
+
+  background: transparent;
+
+  color: #111;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 12pt;
+
+  line-height: 1.55;
+
+}
+
+.tiptap-page-editor:focus {
+
+  outline: none;
+
+}
+
+.tiptap-page-editor h1 {
+
+  font-size: 20pt;
+
+  font-weight: 700;
+
+  margin: 0 0 12pt;
+
+}
+
+.tiptap-page-editor h2 {
+
+  font-size: 14pt;
+
+  font-weight: 700;
+
+  margin: 14pt 0 8pt;
+
+}
+
+.tiptap-page-editor p {
+
+  margin: 0 0 8pt;
+
+  text-wrap: wrap;
+
+}
+
+.tiptap-page-editor ul,
+
+.tiptap-page-editor ol {
+
+  padding-left: 24pt;
+
+  margin: 0 0 8pt;
+
+}
+
+.tiptap-page-editor strong {
+
+  font-weight: 700;
+
+}
+
+.tiptap-page-editor table {
+
+  border-collapse: collapse;
+
+  width: 100%;
+
+  margin: 0 0 8pt;
+
+  table-layout: fixed;
+
+}
+
+.tiptap-page-editor th,
+
+.tiptap-page-editor td {
+
+  border: 1px solid #9ca3af;
+
+  padding: 4pt 6pt;
+
+  vertical-align: top;
+
+}
+
+.tiptap-page-editor th {
+
+  background: #f3f4f6;
+
+  font-weight: 700;
+
+}
+
+.tiptap-page-editor .selectedCell {
+
+  background: rgba(59, 130, 246, 0.15);
+
+}
+
+.tiptap-page-editor .column-resize-handle {
+
+  background: #3b82f6;
+
+}
+
+.tiptap-page-editor [data-variable="contract-variable"] {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  border-radius: 3px;
+
+  background: #eff6ff;
+
+  color: #1d4ed8;
+
+  border: 1px solid #bfdbfe;
+
+  padding: 0 4px;
+
+  margin: 0 1px;
+
+  font-size: 0.85em;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  vertical-align: baseline;
+
+}
+
+.contract-var-chip {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  border-radius: 4px;
+
+  background: #eff6ff;
+
+  color: #1d4ed8;
+
+  border: 1px solid #bfdbfe;
+
+  padding: 0 6px;
+
+  margin: 0 1px;
+
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  font-size: 0.8em;
+
+  font-weight: 500;
+
+  line-height: 1.6;
+
+  white-space: nowrap;
+
+  vertical-align: baseline;
+
+  cursor: default;
+
+  user-select: none;
+
+}
+
+.tiptap-a4 h1 {
+
+  font-size: 20pt;
+
+  font-weight: 700;
+
+  margin: 0 0 12pt;
+
+}
+
+.tiptap-a4 h2 {
+
+  font-size: 14pt;
+
+  font-weight: 700;
+
+  margin: 14pt 0 8pt;
+
+}
+
+.tiptap-a4 p {
+
+  margin: 0 0 8pt;
+
+}
+
+.tiptap-a4 ul,
+
+.tiptap-a4 ol {
+
+  padding-left: 24pt;
+
+  margin: 0 0 8pt;
+
+}
+
+.tiptap-a4 strong {
+
+  font-weight: 700;
+
+}
+
+
+
+/* Print-safe wrapper (PDF generation) — no inherited oklch */
+
+.pdf-safe,
+
+.pdf-safe * {
+
+  border-color: #d1d5db !important;
+
+  color: inherit;
+
+}
+
+
+
+/* Preview panel styles (scaled A4) */
+
+.tiptap-preview {
+
+  width: 210mm;
+
+  min-height: 297mm;
+
+  padding: 25mm 22mm;
+
+  background: #ffffff;
+
+  color: #111;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 12pt;
+
+  line-height: 1.55;
+
+}
+
+.tiptap-preview h1 {
+
+  font-size: 20pt;
+
+  font-weight: 700;
+
+  margin: 0 0 12pt;
+
+}
+
+.tiptap-preview h2 {
+
+  font-size: 14pt;
+
+  font-weight: 700;
+
+  margin: 14pt 0 8pt;
+
+}
+
+.tiptap-preview p {
+
+  margin: 0 0 8pt;
+
+}
+
+.tiptap-preview ul,
+
+.tiptap-preview ol {
+
+  padding-left: 24pt;
+
+  margin: 0 0 8pt;
+
+}
+
+.tiptap-preview strong {
+
+  font-weight: 700;
+
+}
+
+
+
+@media (max-width: 900px) {
+
+  .tiptap-a4 {
+
+    width: 100%;
+
+    padding: 12mm;
+
+  }
+
+}
+
+
+
+/* Date and time picker icons — dark theme compatible */
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+
+  filter: invert(1);
+
+  opacity: 0.8;
+
+  cursor: pointer;
+
+}
+
+
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover,
+
+input[type="time"]::-webkit-calendar-picker-indicator:hover {
+
+  opacity: 1;
+
+}
+
+
+
+/* Firefox date/time picker icons */
+
+input[type="date"]::-moz-calendar-picker-indicator,
+
+input[type="time"]::-moz-calendar-picker-indicator {
+
+  filter: invert(1);
+
+  opacity: 0.8;
+
+  cursor: pointer;
+
+} 
+

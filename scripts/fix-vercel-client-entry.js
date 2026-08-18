@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, readdirSync, copyFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, copyFileSync, existsSync, mkdirSync, cpSync, rmSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -7,60 +7,77 @@ const projectRoot = join(__dirname, '..');
 
 const vercelOutput = join(projectRoot, '.vercel', 'output');
 const staticDir = join(vercelOutput, 'static');
-const rendererTemplatePath = join(vercelOutput, 'functions', '__server.func', '_chunks', 'renderer-template.mjs');
-const ssrAssetsDir = join(projectRoot, 'node_modules', '.nitro', 'vite', 'services', 'ssr', 'assets');
+const clientDist = join(projectRoot, 'dist', 'client');
 
-if (!existsSync(vercelOutput)) {
-  console.log('[fix-vercel] No .vercel/output found, skipping.');
+const isVercel = existsSync(vercelOutput) || process.env.VERCEL;
+
+if (!isVercel) {
+  console.log('[fix-vercel] Not a Vercel build, skipping.');
   process.exit(0);
 }
 
-// Find manifest file
-const files = readdirSync(ssrAssetsDir);
-const manifestFile = files.find(f => f.startsWith('_tanstack-start-manifest') && f.endsWith('.js'));
+// Clean and prepare output
+if (existsSync(vercelOutput)) {
+  cpSync(vercelOutput, join(projectRoot, '.vercel-backup'), { recursive: true });
+  rmSync(vercelOutput, { recursive: true, force: true });
+}
 
-if (!manifestFile) {
-  console.error('[fix-vercel] Manifest file not found in', ssrAssetsDir);
+mkdirSync(staticDir, { recursive: true });
+
+// Copy client dist to static output
+if (existsSync(clientDist)) {
+  cpSync(clientDist, staticDir, { recursive: true });
+  console.log('[fix-vercel] Copied dist/client to .vercel/output/static');
+} else {
+  console.error('[fix-vercel] dist/client not found. Run vite build first.');
   process.exit(1);
 }
 
-// Read manifest and extract clientEntry
-const manifestContent = readFileSync(join(ssrAssetsDir, manifestFile), 'utf-8');
-const match = manifestContent.match(/clientEntry:\s*"([^"]+)"/);
+// Find the hashed client entry bundle
+const assetsDir = join(staticDir, 'assets');
+const files = readdirSync(assetsDir);
+const clientEntry = files.find(f => f.startsWith('index-') && f.endsWith('.js') && !f.includes('.css'));
 
-if (!match) {
-  console.error('[fix-vercel] clientEntry not found in manifest');
+if (!clientEntry) {
+  console.error('[fix-vercel] Client entry bundle not found in', assetsDir);
   process.exit(1);
 }
 
-const clientEntry = match[1];
-console.log('[fix-vercel] Found clientEntry:', clientEntry);
+console.log('[fix-vercel] Found client entry:', clientEntry);
 
 // Copy hashed client entry to fixed main.js
-const sourcePath = join(staticDir, clientEntry);
-const targetPath = join(staticDir, 'assets', 'main.js');
-
-if (!existsSync(sourcePath)) {
-  console.error('[fix-vercel] Source file not found:', sourcePath);
-  process.exit(1);
-}
+const sourcePath = join(assetsDir, clientEntry);
+const targetPath = join(assetsDir, 'main.js');
 
 copyFileSync(sourcePath, targetPath);
 console.log('[fix-vercel] Copied client entry to:', targetPath);
 
-// Update renderer-template.mjs if it exists (legacy static SSR mode)
-if (existsSync(rendererTemplatePath)) {
-  let rendererContent = readFileSync(rendererTemplatePath, 'utf-8');
-  const oldScript = '/src/main.tsx';
-  const newScript = '/assets/main.js';
+// Create or update index.html to reference /assets/main.js
+const indexPath = join(staticDir, 'index.html');
+let indexHtml = '';
 
-  if (rendererContent.includes(oldScript)) {
-    rendererContent = rendererContent.replace(oldScript, newScript);
-    writeFileSync(rendererTemplatePath, rendererContent);
-    console.log('[fix-vercel] Updated renderer-template.mjs to reference', newScript);
-  } else {
-    console.warn('[fix-vercel] Old script tag not found in renderer-template.mjs, skipping update.');
-  }
+if (existsSync(indexPath)) {
+  indexHtml = readFileSync(indexPath, 'utf-8');
 } else {
-  console.log('[fix-vercel] renderer-template.mjs not found (SSR mode active), skipping HTML update.');
+  indexHtml = `<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lunai Advocacia</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/assets/main.js"></script>
+  </body>
+</html>`;
 }
+
+// Replace any script src with /assets/main.js
+const scriptPattern = /<script[^>]*src="[^"]*"[^>]*><\/script>/gi;
+if (indexHtml.match(scriptPattern)) {
+  indexHtml = indexHtml.replace(scriptPattern, '<script type="module" src="/assets/main.js"></script>');
+}
+
+writeFileSync(indexPath, indexHtml);
+console.log('[fix-vercel] Wrote index.html referencing /assets/main.js');

@@ -48,15 +48,19 @@ if (!existsSync(sourcePath)) {
 copyFileSync(sourcePath, targetPath);
 console.log('[fix-vercel] Copied client entry to:', targetPath);
 
-// Update renderer-template.mjs
-let rendererContent = readFileSync(rendererTemplatePath, 'utf-8');
-const oldScript = '/src/main.tsx';
-const newScript = '/assets/main.js';
+// Update renderer-template.mjs if it exists (legacy static SSR mode)
+if (existsSync(rendererTemplatePath)) {
+  let rendererContent = readFileSync(rendererTemplatePath, 'utf-8');
+  const oldScript = '/src/main.tsx';
+  const newScript = '/assets/main.js';
 
-if (rendererContent.includes(oldScript)) {
-  rendererContent = rendererContent.replace(oldScript, newScript);
-  writeFileSync(rendererTemplatePath, rendererContent);
-  console.log('[fix-vercel] Updated renderer-template.mjs to reference', newScript);
+  if (rendererContent.includes(oldScript)) {
+    rendererContent = rendererContent.replace(oldScript, newScript);
+    writeFileSync(rendererTemplatePath, rendererContent);
+    console.log('[fix-vercel] Updated renderer-template.mjs to reference', newScript);
+  } else {
+    console.warn('[fix-vercel] Old script tag not found in renderer-template.mjs, skipping update.');
+  }
 } else {
-  console.warn('[fix-vercel] Old script tag not found in renderer-template.mjs, skipping update.');
+  console.log('[fix-vercel] renderer-template.mjs not found (SSR mode active), skipping HTML update.');
 }

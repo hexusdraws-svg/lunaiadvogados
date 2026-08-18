@@ -8,13 +8,9 @@ const isVercelBuild =
 
 export default defineConfig({
   tanstackStart: {
-    // Tell TanStack Start to use the real SSR entry in src/server.ts.
-    // This keeps the local Vite preview compatible with the generated server bundle.
     server: { entry: "server" },
   },
 
-  // The Lovable wrapper can otherwise select its Cloudflare Nitro target.
-  // Disable that wrapper Nitro/Cloudflare path and explicitly add Nitro for Vercel.
   nitro: false,
   cloudflare: isVercelBuild ? false : undefined,
 
@@ -22,6 +18,7 @@ export default defineConfig({
     ? [
         nitro({
           preset: "vercel",
+          entry: "./src/server.ts",
           output: {
             dir: ".vercel/output",
             serverDir: ".vercel/output/functions/__server.func",

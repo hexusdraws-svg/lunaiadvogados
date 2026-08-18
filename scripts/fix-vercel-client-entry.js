@@ -1,40 +1,26 @@
-import { readFileSync, writeFileSync, readdirSync, copyFileSync, existsSync, mkdirSync, cpSync, rmSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, copyFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const projectRoot = join(__dirname, '..');
 
-const vercelOutput = join(projectRoot, '.vercel', 'output');
-const staticDir = join(vercelOutput, 'static');
 const clientDist = join(projectRoot, 'dist', 'client');
+const assetsDir = join(clientDist, 'assets');
 
-const isVercel = existsSync(vercelOutput) || process.env.VERCEL;
+const isVercel = process.env.VERCEL;
 
 if (!isVercel) {
   console.log('[fix-vercel] Not a Vercel build, skipping.');
   process.exit(0);
 }
 
-// Clean and prepare output
-if (existsSync(vercelOutput)) {
-  cpSync(vercelOutput, join(projectRoot, '.vercel-backup'), { recursive: true });
-  rmSync(vercelOutput, { recursive: true, force: true });
-}
-
-mkdirSync(staticDir, { recursive: true });
-
-// Copy client dist to static output
-if (existsSync(clientDist)) {
-  cpSync(clientDist, staticDir, { recursive: true });
-  console.log('[fix-vercel] Copied dist/client to .vercel/output/static');
-} else {
+if (!existsSync(clientDist)) {
   console.error('[fix-vercel] dist/client not found. Run vite build first.');
   process.exit(1);
 }
 
 // Find the hashed client entry bundle
-const assetsDir = join(staticDir, 'assets');
 const files = readdirSync(assetsDir);
 const clientEntry = files.find(f => f.startsWith('index-') && f.endsWith('.js') && !f.includes('.css'));
 
@@ -53,7 +39,7 @@ copyFileSync(sourcePath, targetPath);
 console.log('[fix-vercel] Copied client entry to:', targetPath);
 
 // Create or update index.html to reference /assets/main.js
-const indexPath = join(staticDir, 'index.html');
+const indexPath = join(clientDist, 'index.html');
 let indexHtml = '';
 
 if (existsSync(indexPath)) {

@@ -9,139 +9,49 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as UnauthorizedRouteImport } from './routes/unauthorized'
-import { Route as TarefasRouteImport } from './routes/tarefas'
-import { Route as SuspendedRouteImport } from './routes/suspended'
-import { Route as SugestoesRouteImport } from './routes/sugestoes'
-import { Route as SobreRouteImport } from './routes/sobre'
-import { Route as SignupRouteImport } from './routes/signup'
-import { Route as ProcessosContratosRouteImport } from './routes/processos-contratos'
-import { Route as ProcessosRouteImport } from './routes/processos'
-import { Route as ModelosRouteImport } from './routes/modelos'
-import { Route as LoginRouteImport } from './routes/login'
-import { Route as LeadsRouteImport } from './routes/leads'
-import { Route as ImoveisRouteImport } from './routes/imoveis'
-import { Route as FinancasRouteImport } from './routes/financas'
-import { Route as EmpresaRouteImport } from './routes/empresa'
-import { Route as DashboardRouteImport } from './routes/dashboard'
-import { Route as ContratosRouteImport } from './routes/contratos'
-import { Route as ConfiguracoesRouteImport } from './routes/configuracoes'
-import { Route as AutomacaoRouteImport } from './routes/automacao'
-import { Route as AudienciasRouteImport } from './routes/audiencias'
-import { Route as AgendaRouteImport } from './routes/agenda'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as SuperAdminIndexRouteImport } from './routes/super-admin.index'
-import { Route as SuperAdminLicencasRouteImport } from './routes/super-admin.licencas'
-import { Route as SuperAdminFinanceiroRouteImport } from './routes/super-admin.financeiro'
-import { Route as SuperAdminEstatisticasRouteImport } from './routes/super-admin.estatisticas'
-import { Route as SuperAdminEmpresasRouteImport } from './routes/super-admin.empresas'
-import { Route as SuperAdminConfiguracoesRouteImport } from './routes/super-admin.configuracoes'
-import { Route as SuperAdminAlertasRouteImport } from './routes/super-admin.alertas'
-import { Route as ProcessosIdRouteImport } from './routes/processos.$id'
-import { Route as ModelosIdRouteImport } from './routes/modelos.$id'
-import { Route as FinancasRecebimentosRouteImport } from './routes/financas.recebimentos'
-import { Route as FinancasDespesasRouteImport } from './routes/financas.despesas'
-import { Route as CadastrosProfissionaisRouteImport } from './routes/cadastros.profissionais'
-import { Route as CadastrosClientesRouteImport } from './routes/cadastros.clientes'
-import { Route as AdminPainelExecutivoRouteImport } from './routes/admin.painel-executivo'
+import { Route as AgendaRouteImport } from './routes/agenda'
+import { Route as AudienciasRouteImport } from './routes/audiencias'
+import { Route as AutomacaoRouteImport } from './routes/automacao'
+import { Route as ConfiguracoesRouteImport } from './routes/configuracoes'
+import { Route as ContratosRouteImport } from './routes/contratos'
+import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as EmpresaRouteImport } from './routes/empresa'
+import { Route as FinancasRouteImport } from './routes/financas'
+import { Route as ImoveisRouteImport } from './routes/imoveis'
+import { Route as LeadsRouteImport } from './routes/leads'
+import { Route as LoginRouteImport } from './routes/login'
+import { Route as ModelosRouteImport } from './routes/modelos'
+import { Route as ProcessosRouteImport } from './routes/processos'
+import { Route as ProcessosContratosRouteImport } from './routes/processos-contratos'
+import { Route as SignupRouteImport } from './routes/signup'
+import { Route as SobreRouteImport } from './routes/sobre'
+import { Route as SugestoesRouteImport } from './routes/sugestoes'
+import { Route as SuspendedRouteImport } from './routes/suspended'
+import { Route as TarefasRouteImport } from './routes/tarefas'
+import { Route as UnauthorizedRouteImport } from './routes/unauthorized'
 import { Route as AdminEmpresasRouteImport } from './routes/admin.empresas'
-import { Route as SuperAdminEmpresasNovaRouteImport } from './routes/super-admin.empresas.nova'
-import { Route as SuperAdminEmpresasCompanyIdRouteImport } from './routes/super-admin.empresas.$companyId'
+import { Route as AdminPainelExecutivoRouteImport } from './routes/admin.painel-executivo'
+import { Route as CadastrosClientesRouteImport } from './routes/cadastros.clientes'
+import { Route as CadastrosProfissionaisRouteImport } from './routes/cadastros.profissionais'
+import { Route as FinancasDespesasRouteImport } from './routes/financas.despesas'
+import { Route as FinancasRecebimentosRouteImport } from './routes/financas.recebimentos'
+import { Route as ModelosIdRouteImport } from './routes/modelos.$id'
+import { Route as ProcessosIdRouteImport } from './routes/processos.$id'
+import { Route as SuperAdminIndexRouteImport } from './routes/super-admin.index'
+import { Route as SuperAdminAlertasRouteImport } from './routes/super-admin.alertas'
+import { Route as SuperAdminConfiguracoesRouteImport } from './routes/super-admin.configuracoes'
+import { Route as SuperAdminEmpresasRouteImport } from './routes/super-admin.empresas'
+import { Route as SuperAdminEstatisticasRouteImport } from './routes/super-admin.estatisticas'
+import { Route as SuperAdminFinanceiroRouteImport } from './routes/super-admin.financeiro'
+import { Route as SuperAdminLicencasRouteImport } from './routes/super-admin.licencas'
 import { Route as AdminEmpresasCompanyIdRouteImport } from './routes/admin.empresas.$companyId'
+import { Route as SuperAdminEmpresasCompanyIdRouteImport } from './routes/super-admin.empresas.$companyId'
+import { Route as SuperAdminEmpresasNovaRouteImport } from './routes/super-admin.empresas.nova'
 
-const UnauthorizedRoute = UnauthorizedRouteImport.update({
-  id: '/unauthorized',
-  path: '/unauthorized',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TarefasRoute = TarefasRouteImport.update({
-  id: '/tarefas',
-  path: '/tarefas',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SuspendedRoute = SuspendedRouteImport.update({
-  id: '/suspended',
-  path: '/suspended',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SugestoesRoute = SugestoesRouteImport.update({
-  id: '/sugestoes',
-  path: '/sugestoes',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SobreRoute = SobreRouteImport.update({
-  id: '/sobre',
-  path: '/sobre',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SignupRoute = SignupRouteImport.update({
-  id: '/signup',
-  path: '/signup',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProcessosContratosRoute = ProcessosContratosRouteImport.update({
-  id: '/processos-contratos',
-  path: '/processos-contratos',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProcessosRoute = ProcessosRouteImport.update({
-  id: '/processos',
-  path: '/processos',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ModelosRoute = ModelosRouteImport.update({
-  id: '/modelos',
-  path: '/modelos',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LoginRoute = LoginRouteImport.update({
-  id: '/login',
-  path: '/login',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LeadsRoute = LeadsRouteImport.update({
-  id: '/leads',
-  path: '/leads',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ImoveisRoute = ImoveisRouteImport.update({
-  id: '/imoveis',
-  path: '/imoveis',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FinancasRoute = FinancasRouteImport.update({
-  id: '/financas',
-  path: '/financas',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EmpresaRoute = EmpresaRouteImport.update({
-  id: '/empresa',
-  path: '/empresa',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DashboardRoute = DashboardRouteImport.update({
-  id: '/dashboard',
-  path: '/dashboard',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContratosRoute = ContratosRouteImport.update({
-  id: '/contratos',
-  path: '/contratos',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ConfiguracoesRoute = ConfiguracoesRouteImport.update({
-  id: '/configuracoes',
-  path: '/configuracoes',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AutomacaoRoute = AutomacaoRouteImport.update({
-  id: '/automacao',
-  path: '/automacao',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AudienciasRoute = AudienciasRouteImport.update({
-  id: '/audiencias',
-  path: '/audiencias',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AgendaRoute = AgendaRouteImport.update({
@@ -149,79 +59,99 @@ const AgendaRoute = AgendaRouteImport.update({
   path: '/agenda',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const AudienciasRoute = AudienciasRouteImport.update({
+  id: '/audiencias',
+  path: '/audiencias',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SuperAdminIndexRoute = SuperAdminIndexRouteImport.update({
-  id: '/super-admin/',
-  path: '/super-admin/',
+const AutomacaoRoute = AutomacaoRouteImport.update({
+  id: '/automacao',
+  path: '/automacao',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SuperAdminLicencasRoute = SuperAdminLicencasRouteImport.update({
-  id: '/super-admin/licencas',
-  path: '/super-admin/licencas',
+const ConfiguracoesRoute = ConfiguracoesRouteImport.update({
+  id: '/configuracoes',
+  path: '/configuracoes',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SuperAdminFinanceiroRoute = SuperAdminFinanceiroRouteImport.update({
-  id: '/super-admin/financeiro',
-  path: '/super-admin/financeiro',
+const ContratosRoute = ContratosRouteImport.update({
+  id: '/contratos',
+  path: '/contratos',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SuperAdminEstatisticasRoute = SuperAdminEstatisticasRouteImport.update({
-  id: '/super-admin/estatisticas',
-  path: '/super-admin/estatisticas',
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SuperAdminEmpresasRoute = SuperAdminEmpresasRouteImport.update({
-  id: '/super-admin/empresas',
-  path: '/super-admin/empresas',
+const EmpresaRoute = EmpresaRouteImport.update({
+  id: '/empresa',
+  path: '/empresa',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SuperAdminConfiguracoesRoute = SuperAdminConfiguracoesRouteImport.update({
-  id: '/super-admin/configuracoes',
-  path: '/super-admin/configuracoes',
+const FinancasRoute = FinancasRouteImport.update({
+  id: '/financas',
+  path: '/financas',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SuperAdminAlertasRoute = SuperAdminAlertasRouteImport.update({
-  id: '/super-admin/alertas',
-  path: '/super-admin/alertas',
+const ImoveisRoute = ImoveisRouteImport.update({
+  id: '/imoveis',
+  path: '/imoveis',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ProcessosIdRoute = ProcessosIdRouteImport.update({
-  id: '/$id',
-  path: '/$id',
-  getParentRoute: () => ProcessosRoute,
-} as any)
-const ModelosIdRoute = ModelosIdRouteImport.update({
-  id: '/$id',
-  path: '/$id',
-  getParentRoute: () => ModelosRoute,
-} as any)
-const FinancasRecebimentosRoute = FinancasRecebimentosRouteImport.update({
-  id: '/recebimentos',
-  path: '/recebimentos',
-  getParentRoute: () => FinancasRoute,
-} as any)
-const FinancasDespesasRoute = FinancasDespesasRouteImport.update({
-  id: '/despesas',
-  path: '/despesas',
-  getParentRoute: () => FinancasRoute,
-} as any)
-const CadastrosProfissionaisRoute = CadastrosProfissionaisRouteImport.update({
-  id: '/cadastros/profissionais',
-  path: '/cadastros/profissionais',
+const LeadsRoute = LeadsRouteImport.update({
+  id: '/leads',
+  path: '/leads',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CadastrosClientesRoute = CadastrosClientesRouteImport.update({
-  id: '/cadastros/clientes',
-  path: '/cadastros/clientes',
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AdminPainelExecutivoRoute = AdminPainelExecutivoRouteImport.update({
-  id: '/admin/painel-executivo',
-  path: '/admin/painel-executivo',
+const ModelosRoute = ModelosRouteImport.update({
+  id: '/modelos',
+  path: '/modelos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProcessosRoute = ProcessosRouteImport.update({
+  id: '/processos',
+  path: '/processos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProcessosContratosRoute = ProcessosContratosRouteImport.update({
+  id: '/processos-contratos',
+  path: '/processos-contratos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SignupRoute = SignupRouteImport.update({
+  id: '/signup',
+  path: '/signup',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SobreRoute = SobreRouteImport.update({
+  id: '/sobre',
+  path: '/sobre',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SugestoesRoute = SugestoesRouteImport.update({
+  id: '/sugestoes',
+  path: '/sugestoes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SuspendedRoute = SuspendedRouteImport.update({
+  id: '/suspended',
+  path: '/suspended',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TarefasRoute = TarefasRouteImport.update({
+  id: '/tarefas',
+  path: '/tarefas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UnauthorizedRoute = UnauthorizedRouteImport.update({
+  id: '/unauthorized',
+  path: '/unauthorized',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdminEmpresasRoute = AdminEmpresasRouteImport.update({
@@ -229,10 +159,80 @@ const AdminEmpresasRoute = AdminEmpresasRouteImport.update({
   path: '/admin/empresas',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SuperAdminEmpresasNovaRoute = SuperAdminEmpresasNovaRouteImport.update({
-  id: '/nova',
-  path: '/nova',
-  getParentRoute: () => SuperAdminEmpresasRoute,
+const AdminPainelExecutivoRoute = AdminPainelExecutivoRouteImport.update({
+  id: '/admin/painel-executivo',
+  path: '/admin/painel-executivo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CadastrosClientesRoute = CadastrosClientesRouteImport.update({
+  id: '/cadastros/clientes',
+  path: '/cadastros/clientes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CadastrosProfissionaisRoute = CadastrosProfissionaisRouteImport.update({
+  id: '/cadastros/profissionais',
+  path: '/cadastros/profissionais',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FinancasDespesasRoute = FinancasDespesasRouteImport.update({
+  id: '/despesas',
+  path: '/despesas',
+  getParentRoute: () => FinancasRoute,
+} as any)
+const FinancasRecebimentosRoute = FinancasRecebimentosRouteImport.update({
+  id: '/recebimentos',
+  path: '/recebimentos',
+  getParentRoute: () => FinancasRoute,
+} as any)
+const ModelosIdRoute = ModelosIdRouteImport.update({
+  id: '/$id',
+  path: '/$id',
+  getParentRoute: () => ModelosRoute,
+} as any)
+const ProcessosIdRoute = ProcessosIdRouteImport.update({
+  id: '/$id',
+  path: '/$id',
+  getParentRoute: () => ProcessosRoute,
+} as any)
+const SuperAdminIndexRoute = SuperAdminIndexRouteImport.update({
+  id: '/super-admin/',
+  path: '/super-admin/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SuperAdminAlertasRoute = SuperAdminAlertasRouteImport.update({
+  id: '/super-admin/alertas',
+  path: '/super-admin/alertas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SuperAdminConfiguracoesRoute = SuperAdminConfiguracoesRouteImport.update({
+  id: '/super-admin/configuracoes',
+  path: '/super-admin/configuracoes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SuperAdminEmpresasRoute = SuperAdminEmpresasRouteImport.update({
+  id: '/super-admin/empresas',
+  path: '/super-admin/empresas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SuperAdminEstatisticasRoute = SuperAdminEstatisticasRouteImport.update({
+  id: '/super-admin/estatisticas',
+  path: '/super-admin/estatisticas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SuperAdminFinanceiroRoute = SuperAdminFinanceiroRouteImport.update({
+  id: '/super-admin/financeiro',
+  path: '/super-admin/financeiro',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SuperAdminLicencasRoute = SuperAdminLicencasRouteImport.update({
+  id: '/super-admin/licencas',
+  path: '/super-admin/licencas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminEmpresasCompanyIdRoute = AdminEmpresasCompanyIdRouteImport.update({
+  id: '/$companyId',
+  path: '/$companyId',
+  getParentRoute: () => AdminEmpresasRoute,
 } as any)
 const SuperAdminEmpresasCompanyIdRoute =
   SuperAdminEmpresasCompanyIdRouteImport.update({
@@ -240,10 +240,10 @@ const SuperAdminEmpresasCompanyIdRoute =
     path: '/$companyId',
     getParentRoute: () => SuperAdminEmpresasRoute,
   } as any)
-const AdminEmpresasCompanyIdRoute = AdminEmpresasCompanyIdRouteImport.update({
-  id: '/$companyId',
-  path: '/$companyId',
-  getParentRoute: () => AdminEmpresasRoute,
+const SuperAdminEmpresasNovaRoute = SuperAdminEmpresasNovaRouteImport.update({
+  id: '/nova',
+  path: '/nova',
+  getParentRoute: () => SuperAdminEmpresasRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
@@ -533,137 +533,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/unauthorized': {
-      id: '/unauthorized'
-      path: '/unauthorized'
-      fullPath: '/unauthorized'
-      preLoaderRoute: typeof UnauthorizedRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/tarefas': {
-      id: '/tarefas'
-      path: '/tarefas'
-      fullPath: '/tarefas'
-      preLoaderRoute: typeof TarefasRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/suspended': {
-      id: '/suspended'
-      path: '/suspended'
-      fullPath: '/suspended'
-      preLoaderRoute: typeof SuspendedRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sugestoes': {
-      id: '/sugestoes'
-      path: '/sugestoes'
-      fullPath: '/sugestoes'
-      preLoaderRoute: typeof SugestoesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sobre': {
-      id: '/sobre'
-      path: '/sobre'
-      fullPath: '/sobre'
-      preLoaderRoute: typeof SobreRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/signup': {
-      id: '/signup'
-      path: '/signup'
-      fullPath: '/signup'
-      preLoaderRoute: typeof SignupRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/processos-contratos': {
-      id: '/processos-contratos'
-      path: '/processos-contratos'
-      fullPath: '/processos-contratos'
-      preLoaderRoute: typeof ProcessosContratosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/processos': {
-      id: '/processos'
-      path: '/processos'
-      fullPath: '/processos'
-      preLoaderRoute: typeof ProcessosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/modelos': {
-      id: '/modelos'
-      path: '/modelos'
-      fullPath: '/modelos'
-      preLoaderRoute: typeof ModelosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/login': {
-      id: '/login'
-      path: '/login'
-      fullPath: '/login'
-      preLoaderRoute: typeof LoginRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/leads': {
-      id: '/leads'
-      path: '/leads'
-      fullPath: '/leads'
-      preLoaderRoute: typeof LeadsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/imoveis': {
-      id: '/imoveis'
-      path: '/imoveis'
-      fullPath: '/imoveis'
-      preLoaderRoute: typeof ImoveisRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/financas': {
-      id: '/financas'
-      path: '/financas'
-      fullPath: '/financas'
-      preLoaderRoute: typeof FinancasRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/empresa': {
-      id: '/empresa'
-      path: '/empresa'
-      fullPath: '/empresa'
-      preLoaderRoute: typeof EmpresaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/dashboard': {
-      id: '/dashboard'
-      path: '/dashboard'
-      fullPath: '/dashboard'
-      preLoaderRoute: typeof DashboardRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contratos': {
-      id: '/contratos'
-      path: '/contratos'
-      fullPath: '/contratos'
-      preLoaderRoute: typeof ContratosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/configuracoes': {
-      id: '/configuracoes'
-      path: '/configuracoes'
-      fullPath: '/configuracoes'
-      preLoaderRoute: typeof ConfiguracoesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/automacao': {
-      id: '/automacao'
-      path: '/automacao'
-      fullPath: '/automacao'
-      preLoaderRoute: typeof AutomacaoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/audiencias': {
-      id: '/audiencias'
-      path: '/audiencias'
-      fullPath: '/audiencias'
-      preLoaderRoute: typeof AudienciasRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/agenda': {
@@ -673,109 +547,137 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AgendaRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/audiencias': {
+      id: '/audiencias'
+      path: '/audiencias'
+      fullPath: '/audiencias'
+      preLoaderRoute: typeof AudienciasRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/super-admin/': {
-      id: '/super-admin/'
-      path: '/super-admin'
-      fullPath: '/super-admin/'
-      preLoaderRoute: typeof SuperAdminIndexRouteImport
+    '/automacao': {
+      id: '/automacao'
+      path: '/automacao'
+      fullPath: '/automacao'
+      preLoaderRoute: typeof AutomacaoRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/super-admin/licencas': {
-      id: '/super-admin/licencas'
-      path: '/super-admin/licencas'
-      fullPath: '/super-admin/licencas'
-      preLoaderRoute: typeof SuperAdminLicencasRouteImport
+    '/configuracoes': {
+      id: '/configuracoes'
+      path: '/configuracoes'
+      fullPath: '/configuracoes'
+      preLoaderRoute: typeof ConfiguracoesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/super-admin/financeiro': {
-      id: '/super-admin/financeiro'
-      path: '/super-admin/financeiro'
-      fullPath: '/super-admin/financeiro'
-      preLoaderRoute: typeof SuperAdminFinanceiroRouteImport
+    '/contratos': {
+      id: '/contratos'
+      path: '/contratos'
+      fullPath: '/contratos'
+      preLoaderRoute: typeof ContratosRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/super-admin/estatisticas': {
-      id: '/super-admin/estatisticas'
-      path: '/super-admin/estatisticas'
-      fullPath: '/super-admin/estatisticas'
-      preLoaderRoute: typeof SuperAdminEstatisticasRouteImport
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/super-admin/empresas': {
-      id: '/super-admin/empresas'
-      path: '/super-admin/empresas'
-      fullPath: '/super-admin/empresas'
-      preLoaderRoute: typeof SuperAdminEmpresasRouteImport
+    '/empresa': {
+      id: '/empresa'
+      path: '/empresa'
+      fullPath: '/empresa'
+      preLoaderRoute: typeof EmpresaRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/super-admin/configuracoes': {
-      id: '/super-admin/configuracoes'
-      path: '/super-admin/configuracoes'
-      fullPath: '/super-admin/configuracoes'
-      preLoaderRoute: typeof SuperAdminConfiguracoesRouteImport
+    '/financas': {
+      id: '/financas'
+      path: '/financas'
+      fullPath: '/financas'
+      preLoaderRoute: typeof FinancasRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/super-admin/alertas': {
-      id: '/super-admin/alertas'
-      path: '/super-admin/alertas'
-      fullPath: '/super-admin/alertas'
-      preLoaderRoute: typeof SuperAdminAlertasRouteImport
+    '/imoveis': {
+      id: '/imoveis'
+      path: '/imoveis'
+      fullPath: '/imoveis'
+      preLoaderRoute: typeof ImoveisRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/processos/$id': {
-      id: '/processos/$id'
-      path: '/$id'
-      fullPath: '/processos/$id'
-      preLoaderRoute: typeof ProcessosIdRouteImport
-      parentRoute: typeof ProcessosRoute
-    }
-    '/modelos/$id': {
-      id: '/modelos/$id'
-      path: '/$id'
-      fullPath: '/modelos/$id'
-      preLoaderRoute: typeof ModelosIdRouteImport
-      parentRoute: typeof ModelosRoute
-    }
-    '/financas/recebimentos': {
-      id: '/financas/recebimentos'
-      path: '/recebimentos'
-      fullPath: '/financas/recebimentos'
-      preLoaderRoute: typeof FinancasRecebimentosRouteImport
-      parentRoute: typeof FinancasRoute
-    }
-    '/financas/despesas': {
-      id: '/financas/despesas'
-      path: '/despesas'
-      fullPath: '/financas/despesas'
-      preLoaderRoute: typeof FinancasDespesasRouteImport
-      parentRoute: typeof FinancasRoute
-    }
-    '/cadastros/profissionais': {
-      id: '/cadastros/profissionais'
-      path: '/cadastros/profissionais'
-      fullPath: '/cadastros/profissionais'
-      preLoaderRoute: typeof CadastrosProfissionaisRouteImport
+    '/leads': {
+      id: '/leads'
+      path: '/leads'
+      fullPath: '/leads'
+      preLoaderRoute: typeof LeadsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/cadastros/clientes': {
-      id: '/cadastros/clientes'
-      path: '/cadastros/clientes'
-      fullPath: '/cadastros/clientes'
-      preLoaderRoute: typeof CadastrosClientesRouteImport
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/admin/painel-executivo': {
-      id: '/admin/painel-executivo'
-      path: '/admin/painel-executivo'
-      fullPath: '/admin/painel-executivo'
-      preLoaderRoute: typeof AdminPainelExecutivoRouteImport
+    '/modelos': {
+      id: '/modelos'
+      path: '/modelos'
+      fullPath: '/modelos'
+      preLoaderRoute: typeof ModelosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/processos': {
+      id: '/processos'
+      path: '/processos'
+      fullPath: '/processos'
+      preLoaderRoute: typeof ProcessosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/processos-contratos': {
+      id: '/processos-contratos'
+      path: '/processos-contratos'
+      fullPath: '/processos-contratos'
+      preLoaderRoute: typeof ProcessosContratosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/signup': {
+      id: '/signup'
+      path: '/signup'
+      fullPath: '/signup'
+      preLoaderRoute: typeof SignupRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sobre': {
+      id: '/sobre'
+      path: '/sobre'
+      fullPath: '/sobre'
+      preLoaderRoute: typeof SobreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sugestoes': {
+      id: '/sugestoes'
+      path: '/sugestoes'
+      fullPath: '/sugestoes'
+      preLoaderRoute: typeof SugestoesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/suspended': {
+      id: '/suspended'
+      path: '/suspended'
+      fullPath: '/suspended'
+      preLoaderRoute: typeof SuspendedRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tarefas': {
+      id: '/tarefas'
+      path: '/tarefas'
+      fullPath: '/tarefas'
+      preLoaderRoute: typeof TarefasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/unauthorized': {
+      id: '/unauthorized'
+      path: '/unauthorized'
+      fullPath: '/unauthorized'
+      preLoaderRoute: typeof UnauthorizedRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/admin/empresas': {
@@ -785,12 +687,110 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminEmpresasRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/super-admin/empresas/nova': {
-      id: '/super-admin/empresas/nova'
-      path: '/nova'
-      fullPath: '/super-admin/empresas/nova'
-      preLoaderRoute: typeof SuperAdminEmpresasNovaRouteImport
-      parentRoute: typeof SuperAdminEmpresasRoute
+    '/admin/painel-executivo': {
+      id: '/admin/painel-executivo'
+      path: '/admin/painel-executivo'
+      fullPath: '/admin/painel-executivo'
+      preLoaderRoute: typeof AdminPainelExecutivoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cadastros/clientes': {
+      id: '/cadastros/clientes'
+      path: '/cadastros/clientes'
+      fullPath: '/cadastros/clientes'
+      preLoaderRoute: typeof CadastrosClientesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cadastros/profissionais': {
+      id: '/cadastros/profissionais'
+      path: '/cadastros/profissionais'
+      fullPath: '/cadastros/profissionais'
+      preLoaderRoute: typeof CadastrosProfissionaisRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/financas/despesas': {
+      id: '/financas/despesas'
+      path: '/despesas'
+      fullPath: '/financas/despesas'
+      preLoaderRoute: typeof FinancasDespesasRouteImport
+      parentRoute: typeof FinancasRoute
+    }
+    '/financas/recebimentos': {
+      id: '/financas/recebimentos'
+      path: '/recebimentos'
+      fullPath: '/financas/recebimentos'
+      preLoaderRoute: typeof FinancasRecebimentosRouteImport
+      parentRoute: typeof FinancasRoute
+    }
+    '/modelos/$id': {
+      id: '/modelos/$id'
+      path: '/$id'
+      fullPath: '/modelos/$id'
+      preLoaderRoute: typeof ModelosIdRouteImport
+      parentRoute: typeof ModelosRoute
+    }
+    '/processos/$id': {
+      id: '/processos/$id'
+      path: '/$id'
+      fullPath: '/processos/$id'
+      preLoaderRoute: typeof ProcessosIdRouteImport
+      parentRoute: typeof ProcessosRoute
+    }
+    '/super-admin/': {
+      id: '/super-admin/'
+      path: '/super-admin'
+      fullPath: '/super-admin/'
+      preLoaderRoute: typeof SuperAdminIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/super-admin/alertas': {
+      id: '/super-admin/alertas'
+      path: '/super-admin/alertas'
+      fullPath: '/super-admin/alertas'
+      preLoaderRoute: typeof SuperAdminAlertasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/super-admin/configuracoes': {
+      id: '/super-admin/configuracoes'
+      path: '/super-admin/configuracoes'
+      fullPath: '/super-admin/configuracoes'
+      preLoaderRoute: typeof SuperAdminConfiguracoesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/super-admin/empresas': {
+      id: '/super-admin/empresas'
+      path: '/super-admin/empresas'
+      fullPath: '/super-admin/empresas'
+      preLoaderRoute: typeof SuperAdminEmpresasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/super-admin/estatisticas': {
+      id: '/super-admin/estatisticas'
+      path: '/super-admin/estatisticas'
+      fullPath: '/super-admin/estatisticas'
+      preLoaderRoute: typeof SuperAdminEstatisticasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/super-admin/financeiro': {
+      id: '/super-admin/financeiro'
+      path: '/super-admin/financeiro'
+      fullPath: '/super-admin/financeiro'
+      preLoaderRoute: typeof SuperAdminFinanceiroRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/super-admin/licencas': {
+      id: '/super-admin/licencas'
+      path: '/super-admin/licencas'
+      fullPath: '/super-admin/licencas'
+      preLoaderRoute: typeof SuperAdminLicencasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/empresas/$companyId': {
+      id: '/admin/empresas/$companyId'
+      path: '/$companyId'
+      fullPath: '/admin/empresas/$companyId'
+      preLoaderRoute: typeof AdminEmpresasCompanyIdRouteImport
+      parentRoute: typeof AdminEmpresasRoute
     }
     '/super-admin/empresas/$companyId': {
       id: '/super-admin/empresas/$companyId'
@@ -799,12 +799,12 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SuperAdminEmpresasCompanyIdRouteImport
       parentRoute: typeof SuperAdminEmpresasRoute
     }
-    '/admin/empresas/$companyId': {
-      id: '/admin/empresas/$companyId'
-      path: '/$companyId'
-      fullPath: '/admin/empresas/$companyId'
-      preLoaderRoute: typeof AdminEmpresasCompanyIdRouteImport
-      parentRoute: typeof AdminEmpresasRoute
+    '/super-admin/empresas/nova': {
+      id: '/super-admin/empresas/nova'
+      path: '/nova'
+      fullPath: '/super-admin/empresas/nova'
+      preLoaderRoute: typeof SuperAdminEmpresasNovaRouteImport
+      parentRoute: typeof SuperAdminEmpresasRoute
     }
   }
 }

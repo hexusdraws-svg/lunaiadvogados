@@ -1,5 +1,7 @@
 Vercel deployment configuration:
-- Nitro runs directly during Vercel builds.
+- TanStack Start runs through Nitro.
+- Nitro uses the Vercel preset.
 - Build output is written to .vercel/output.
-- No SPA rewrite/vercel.json is required.
+- The root vercel.json explicitly points Vercel to .vercel/output.
+- No SPA rewrite is required.
 - Local preview remains on TanStack Start's normal server output.
